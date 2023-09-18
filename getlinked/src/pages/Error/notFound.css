@@ -1,0 +1,50 @@
+.error-page {
+  background-color: #528dc2;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.error-page > h1 {
+  background-color: #002564;
+  font-size: 180px;
+  color: #fff;
+  padding: 90px 30px;
+  border-radius: 50%;
+  margin-bottom: 50px;
+  text-shadow: 2px 2px 4px #528dc2;
+}
+
+.error-page-text {
+  color: #fff;
+  margin-bottom: 30px;
+}
+
+.go-back-home-btn {
+  width: 180px;
+  height: 45px;
+  border: none;
+  background-color: #58adcc;
+  border-radius: 20px;
+  color: #fff;
+  padding: 7px 25px;
+  transition: 0.2s;
+  border: 1px solid #fff;
+}
+
+.go-back-home-btn:hover {
+  background-color: #002564;
+  transition: 0.2s;
+  border: none;
+  border: 1px solid #002564;
+}
+
+
+@media screen and (max-width: 500px) {
+  .error-page > h1 {
+    font-size: 120px;
+    padding: 80px 20px;
+  }
+}

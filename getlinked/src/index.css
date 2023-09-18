@@ -5,10 +5,10 @@
 }
 
 :root {
-  --primary: linear-gradient(270deg, #903AFF 0%, #FE34B9 100%);
-  --secondary: #150E28;
-  --tertiary: #903AFF;
-  --quaternary: #D434FE;
+  --primary: linear-gradient(270deg, #903aff 0%, #fe34b9 100%);
+  --secondary: #150e28;
+  --tertiary: #903aff;
+  --quaternary: #d434fe;
 }
 
 body {

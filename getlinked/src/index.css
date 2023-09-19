@@ -38,3 +38,7 @@ button {
     #fe34b9 100%
   );
 }
+
+.colored_span {
+  color: #d434fe;
+}

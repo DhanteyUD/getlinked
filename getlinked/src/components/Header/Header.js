@@ -33,7 +33,7 @@ function Header() {
 							id="work"
 							type="button"
 							name="Hover"
-							className="register_btn"
+							className="nav_register_btn"
 						>
 							Register
 						</button>

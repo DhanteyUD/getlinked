@@ -1,5 +1,5 @@
 import React from "react";
-import { Header, HeroContent, IntroContent } from "../components";
+import { Header, HeroContent, IntroContent, RuleContent } from "../components";
 
 function Home() {
 	return (
@@ -8,6 +8,7 @@ function Home() {
 				<Header />
 				<HeroContent />
 				<IntroContent />
+				<RuleContent />
 			</div>
 		</>
 	);

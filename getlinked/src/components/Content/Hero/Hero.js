@@ -3,13 +3,32 @@ import "./hero.css";
 import curvedSTroke from "../../../assets/curved-stroke.svg";
 import HRViewer from "../../../assets/man-wearing-smart-glasses-touching-virtual-screen 1.png";
 import bubble from "../../../assets/bubble.svg";
+import brightStar from "../../../assets/star-bright.svg";
+import faintStar from "../../../assets/star-faint.svg";
+import bulb from "../../../assets/bulb.svg";
+import chain from "../../../assets/chain.svg";
+import pow from "../../../assets/pow.svg";
 
 function HeroContent() {
 	return (
 		<>
 			<div className="gl_hero">
 				<h3>Igniting a Revolution in HR Innovation</h3>
-				<img src={curvedSTroke} alt="curved stroke" />
+				<img
+					src={curvedSTroke}
+					alt="curved stroke"
+					className="hero img_stroke"
+				/>
+				<img
+					src={brightStar}
+					alt="Bright star"
+					className="hero img_bright_star"
+				/>
+				<img src={faintStar} alt="Faint star" className="hero img_faint_star" />
+				<img src={bulb} alt="Bulb" className="hero img_bulb" />
+				<img src={chain} alt="Chain" className="hero img_chain" />
+				<img src={pow} alt="Pow" className="hero img_pow" />
+				<img src={faintStar} alt="Faint" className="hero img_faint_star_2" />
 
 				<div className="gl_hero_container">
 					<div className="gl_hero_left">

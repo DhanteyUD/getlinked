@@ -1,44 +1,47 @@
 import "./header.css";
 import React from "react";
-// import { useNavigate } from "react-router-dom";
-// import { HiMenu, HiMenuAlt2 } from "react-icons/hi";
+import navbarMenu from "./navList";
+import { NavLink } from "react-router-dom";
+import getLinkedLogo from "../../assets/getlinked.svg";
 
 function Header() {
-//   const navigate = useNavigate();
-  // const [isNavExpanded, setIsNavExpanded] = useState(false);
+	return (
+		<>
+			{/* Desktop Nav */}
+			<header className="gl_header">
+				<div className="gl_logo">
+					<img src={getLinkedLogo} alt="getlinked logo" />
+				</div>
 
-  return (
-    <>
-      {/* Mobile Nav */}
-      {/* {isNavExpanded && (
-				<div className="cs_header_mobile">
-					<div className="cs_header_info_mobile">
-						<p onClick={handleNavigateToHome}>HOME</p>
-						<p onClick={() => navigate("/track")}>TRACK APPLICATION</p>
+				<div className="navbar_menu">
+					<div className="navbar_links">
+						{navbarMenu.map((item, index) => (
+							<NavLink
+								to={item.path}
+								key={index}
+								className="navbar_link"
+								activeclassname="active"
+							>
+								<div className="navbar_name">{item.name}</div>
+							</NavLink>
+						))}
+					</div>
+
+					<div className="register_btn_container">
+						<span className="reg">Register</span>
+						<button
+							id="work"
+							type="button"
+							name="Hover"
+							className="register_btn"
+						>
+							Register
+						</button>
 					</div>
 				</div>
-			)} */}
-
-      {/* {isNavExpanded ? (
-				<HiMenuAlt2
-					className="close_menu_icon_mobile"
-					onClick={() => {
-						setIsNavExpanded(!isNavExpanded);
-					}}
-				/>
-			) : (
-				<HiMenu
-					className="open_menu_icon_mobile"
-					onClick={() => {
-						setIsNavExpanded(!isNavExpanded);
-					}}
-				/>
-			)} */}
-
-      {/* Desktop Nav */}
-      <header className="gl_header"></header>
-    </>
-  );
+			</header>
+		</>
+	);
 }
 
 export default Header;

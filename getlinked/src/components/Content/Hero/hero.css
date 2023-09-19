@@ -1,0 +1,105 @@
+.gl_hero {
+  padding-top: 130px;
+  height: 813px;
+  background:
+    url(../../../assets/Purple-Lens-Flare-PNG.png),
+    #150e28 -0.25px 0px / 130.652% 100% no-repeat;
+  background-blend-mode: hard-light;
+  background-repeat: no-repeat;
+  background-blend-mode: hard-light;
+  background-size: 1000px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.gl_hero_left {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  width: 60%;
+  height: 100%;
+  padding: 0 0 30px 128px;
+}
+
+.gl_hero_left > h1 {
+  color: #fff;
+  font-family: "Clash Display", sans-serif;
+  font-size: 80px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-bottom: 10px;
+}
+
+.gl_hero_left > p {
+  color: #fff;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 166%;
+  word-wrap: break-word;
+  width: 70%;
+  margin-bottom: 40px;
+}
+
+.gl_hero_left > button {
+  width: 172px;
+  height: 53px;
+  flex-shrink: 0;
+  color: #fff;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-bottom: 60px;
+  transition: 0.3s !important;
+  transition: all 0.5s;
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+}
+
+.gl_hero_left > button:after {
+  content: "»";
+  position: absolute;
+  opacity: 0;
+  top: 17px;
+  right: -30px;
+  transition: 0.5s;
+}
+
+.gl_hero_left > button:hover {
+  padding-right: 24px;
+  padding-left: 8px;
+}
+
+button:hover:after {
+  opacity: 1;
+  right: 10px;
+}
+
+.gr_hero_countdown_clock {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gr_hero_countdown_clock > p {
+  color: #fff;
+  font-family: "Unica One", sans-serif;
+  font-style: normal;
+  line-height: normal;
+  margin: 0 22px 0 0;
+  font-size: 64px;
+  font-weight: 400;
+  line-height: 133%;
+}
+
+._clock_indicator {
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 133%;
+}

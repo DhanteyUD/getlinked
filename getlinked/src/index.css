@@ -20,9 +20,8 @@ body {
 
 .app {
   display: flex;
-  min-height: 100vh;
+  height: auto;
   flex-direction: column;
-  justify-content: space-between;
 }
 
 button {
@@ -30,6 +29,7 @@ button {
   border: none;
   cursor: pointer;
   color: #fff;
+  font-family: "Montserrat", sans-serif;
   background: linear-gradient(
     270deg,
     #903aff 0%,

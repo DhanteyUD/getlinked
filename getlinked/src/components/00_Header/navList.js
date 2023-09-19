@@ -1,22 +1,18 @@
 const navbarMenu = [
 	{
-		// path: "/timeline",
-		path: "/",
+		path: "/timeline",
 		name: "Timeline",
 	},
 	{
-		// path: "/overview",
-		path: "/",
+		path: "/overview",
 		name: "Overview",
 	},
 	{
-		// path: "/faqs",
-		path: "/",
+		path: "/faqs",
 		name: "FAQS",
 	},
 	{
-		// path: "/contact",
-		path: "/",
+		path: "/contact",
 		name: "Contact",
 	},
 ];

@@ -1,0 +1,99 @@
+.gl_contact {
+  display: flex;
+  padding-top: 130px;
+  height: 100vh;
+}
+
+.gl_contact_container {
+  display: flex;
+  width: 100%;
+}
+
+.gl_contact_info {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 40%;
+  height: 100%;
+  padding: 8% 0 0 160px;
+}
+
+.gl_contact_info > h1 {
+  color: #d434fe;
+  font-family: "Clash Display", sans-serif;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-bottom: 20px;
+}
+
+.gl_contact_info p {
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 20px;
+}
+
+.gl_contact_info p:nth-child(2),
+.gl_contact_info p:nth-child(3) {
+  width: 32%;
+}
+
+.gl_contact_info p:nth-child(4),
+.gl_contact_info p:nth-child(5) {
+  width: 70%;
+}
+
+.gl_contact_info p:nth-child(5) {
+  margin-bottom: 40px;
+}
+
+.gl_contact_media_div > p {
+  color: #d434fe;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-bottom: 15px;
+}
+
+.gl_contact_media_icons {
+  display: flex;
+  justify-content: space-between;
+  max-width: 35%;
+  margin-left: -5px;
+}
+
+.gl_contact_media_icons img {
+  cursor: pointer;
+  transition: 0.5s;
+  padding: 5px;
+}
+
+.gl_contact_media_icons img:hover {
+  transform: scale(1.5);
+  transition: 0.5s;
+  background: linear-gradient(
+    270deg,
+    #903aff 0%,
+    #d434fe 56.42%,
+    #ff26b9 99.99%,
+    #fe34b9 100%
+  );
+}
+
+.gl_contact_form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 60%;
+  height: 100%;
+
+  background-color: blue;
+}

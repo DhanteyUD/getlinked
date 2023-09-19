@@ -1,6 +1,6 @@
 .gl_header {
   /* position: fixed; */
-  /* z-index: 100; */
+  z-index: 100;
   position: absolute;
   top: 0;
   width: 100%;
@@ -8,11 +8,23 @@
   justify-content: space-between;
   align-items: flex-end;
   padding: 0 128px 25px 128px;
-  height: 130px;
+  height: 17%;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.18);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.18); 
   backdrop-filter: blur(10px);
 }
+
+.gl_header.contact {
+  border-bottom: none;
+}
+
+.gl_logo > img {
+  cursor: pointer;
+}
+
+/*-----------------
+  Nav List
+ ------------------*/
 
 .navbar_menu {
   display: flex;
@@ -65,6 +77,20 @@
   transform: scaleX(1);
 }
 
+.active {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  background: linear-gradient(90deg, #903aff 3.08%, #ff26b9 93.85%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/*-----------------
+  Register Button 
+ ------------------*/
 .btn-flip {
   opacity: 1;
   outline: 0;

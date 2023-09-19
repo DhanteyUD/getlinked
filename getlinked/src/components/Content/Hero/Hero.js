@@ -28,13 +28,13 @@ function HeroContent() {
 				<img src={bulb} alt="Bulb" className="hero img_bulb" />
 				<img src={chain} alt="Chain" className="hero img_chain" />
 				<img src={pow} alt="Pow" className="hero img_pow" />
-				<img src={faintStar} alt="Faint" className="hero img_faint_star_2" />
+				<img src={faintStar} alt="Faint" className="hero img_faint_star2" />
 
 				<div className="gl_hero_container">
 					<div className="gl_hero_left">
 						<h1>
 							getlinked Tech <br />
-							Hackathon <span style={{ color: "#D434FE" }}>1.0</span>
+							Hackathon <span className="colored_span">1.0</span>
 						</h1>
 						<p>
 							Participate in getlinked tech Hackathon 2023 stand a chance to win

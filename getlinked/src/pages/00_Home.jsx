@@ -1,6 +1,5 @@
 import React from "react";
-// import { Header, HomeContent, Footer } from "../components";
-import { Header, HeroContent } from "../components";
+import { Header, HeroContent, IntroContent } from "../components";
 
 function Home() {
 	return (
@@ -8,6 +7,7 @@ function Home() {
 			<div className="app">
 				<Header />
 				<HeroContent />
+				<IntroContent />
 			</div>
 		</>
 	);

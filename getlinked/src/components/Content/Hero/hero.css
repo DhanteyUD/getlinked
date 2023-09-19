@@ -23,10 +23,49 @@
   line-height: normal;
 }
 
-.gl_hero > img {
+.gl_hero img {
+  position: absolute;
+}
+
+.hero.img_stroke {
   position: absolute;
   top: 23.5%;
   right: 6%;
+}
+.hero.img_bright_star {
+  position: absolute;
+  top: 23.5%;
+  left: 13%;
+}
+.hero.img_faint_star {
+  position: absolute;
+  top: 28.5%;
+  right: 46%;
+}
+.hero.img_bulb {
+  position: absolute;
+  top: 31.8%;
+  right: 51.8%;
+}
+.hero.img_chain {
+  position: absolute;
+  top: 49%;
+  right: 44.5%;
+}
+.hero.img_chain {
+  position: absolute;
+  top: 49%;
+  right: 44.5%;
+}
+.hero.img_pow {
+  position: absolute;
+  top: 50%;
+  right: 40.5%;
+}
+.hero.img_faint_star_2 {
+  position: absolute;
+  bottom: 18%;
+  left: 38%;
 }
 
 .gl_hero_container {
@@ -132,7 +171,7 @@ button:hover:after {
 
 .gl_hero_right {
   background:
-    url(../../../assets/Purple-Lens-Flare-PNG.png), 
+    url(../../../assets/Purple-Lens-Flare-PNG.png),
     #150e28 -0.25px 0px / 130.652% 100% no-repeat;
   background-blend-mode: hard-light;
   background-repeat: no-repeat;

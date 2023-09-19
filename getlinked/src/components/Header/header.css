@@ -65,80 +65,73 @@
   transform: scaleX(1);
 }
 
-.register_btn_container {
+.btn-flip {
+  opacity: 1;
+  outline: 0;
   position: relative;
-  width: 172px;
-  height: 53px;
-  overflow: hidden;
-  transition: 0.5s;
-  background: #fff;
+  letter-spacing: 1px;
+  text-decoration: none;
+  border-radius: 4px;
+  background: linear-gradient(#9a39ff, #ff29b9);
+}
+
+.btn-flip:hover::after {
+  opacity: 1;
+  transform: translateY(0) rotateX(0);
+}
+
+.btn-flip:hover::before {
+  opacity: 0;
+  transform: translateY(50%) rotateX(90deg);
+}
+
+.btn-flip::after {
+  top: 2px;
+  left: 2px;
+  bottom: 2px;
+  right: 2px;
+  opacity: 0;
   flex-shrink: 0;
   border-radius: 4px;
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
-}
-
-.nav_register_btn {
-  width: 172px;
-  height: 53px;
-  font-weight: 500;
-  font-family: "Montserrat", sans-serif;
-  font-size: 16px;
-  -webkit-mask: url("https://raw.githubusercontent.com/robin-dela/css-mask-animation/master/img/nature-sprite.png");
-  mask: url("https://raw.githubusercontent.com/robin-dela/css-mask-animation/master/img/nature-sprite.png");
-  -webkit-mask-size: 2300% 100%;
-  mask-size: 2300% 100%;
-  color: #fff;
-  -webkit-animation: ani2 0.7s steps(22) forwards;
-  animation: ani2 0.7s steps(22) forwards;
-}
-
-.nav_register_btn:hover {
-  -webkit-animation: ani 0.7s steps(22) forwards;
-  animation: ani 0.7s steps(22) forwards;
-}
-
-.reg {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #d434fe;
-  text-align: center;
+  transition: 0.5s;
   position: absolute;
-  overflow: hidden;
+  background: #150e28;
+  content: attr(data-back);
+  transform: translateY(-50%) rotateX(90deg);
+}
+
+.btn-flip::before {
+  color: #fff;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
   width: 172px;
   height: 53px;
   flex-shrink: 0;
   border-radius: 4px;
+  font-family: "Montserrat", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
-  cursor: pointer;
-}
-
-@keyframes ani {
-  from {
-    -webkit-mask-position: 0 0;
-    mask-position: 0 0;
-  }
-
-  to {
-    -webkit-mask-position: 100% 0;
-    mask-position: 100% 0;
-  }
-}
-
-@keyframes ani2 {
-  from {
-    -webkit-mask-position: 100% 0;
-    mask-position: 100% 0;
-  }
-
-  to {
-    -webkit-mask-position: 0 0;
-    mask-position: 0 0;
-  }
+  transition: 0.5s;
+  background: linear-gradient(
+    270deg,
+    #903aff 0%,
+    #d434fe 56.42%,
+    #ff26b9 99.99%,
+    #fe34b9 100%
+  );
+  content: attr(data-front);
+  transform: translateY(0) rotateX(0);
 }

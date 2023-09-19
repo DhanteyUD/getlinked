@@ -27,17 +27,12 @@ function Header() {
 						))}
 					</div>
 
-					<div className="register_btn_container">
-						<span className="reg">Register</span>
-						<button
-							id="work"
-							type="button"
-							name="Hover"
-							className="nav_register_btn"
-						>
-							Register
-						</button>
-					</div>
+					<a
+						href="#"
+						className="btn-flip"
+						data-back="Register"
+						data-front="Register"
+					></a>
 				</div>
 			</header>
 		</>

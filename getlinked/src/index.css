@@ -12,6 +12,8 @@
 }
 
 body {
+  font-family: "Montserrat", sans-serif;
+  background-color: var(--secondary);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -21,4 +23,18 @@ body {
   min-height: 100vh;
   flex-direction: column;
   justify-content: space-between;
+}
+
+button {
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+  background: linear-gradient(
+    270deg,
+    #903aff 0%,
+    #d434fe 56.42%,
+    #ff26b9 99.99%,
+    #fe34b9 100%
+  );
 }

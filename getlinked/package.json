@@ -2,6 +2,9 @@
   "name": "getlinked",
   "version": "0.1.0",
   "private": true,
+  "lint": "eslint .",
+  "lint:fix": "eslint --fix",
+  "format": "prettier --write './**/*.{js,jsx,ts,tsx,css,md,json}' --config ./.prettierrc",
   "dependencies": {
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^13.0.0",

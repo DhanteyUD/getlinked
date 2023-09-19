@@ -1,16 +1,33 @@
 import "./header.css";
-import React from "react";
+import React, { useCallback, useEffect, useState } from "react";
 import navbarMenu from "./navList";
-import { NavLink } from "react-router-dom";
+import { useNavigate, NavLink, useLocation } from "react-router-dom";
 import getLinkedLogo from "../../assets/getlinked.svg";
 
 function Header() {
+	const navigate = useNavigate();
+	const location = useLocation();
+	const [myLocation, setMyLocation] = useState("");
+
+	const getCurrentTitle = useCallback(() => {
+		const header = location.pathname.split("/")[1];
+		setMyLocation(header);
+	}, [location.pathname]);
+
+	useEffect(() => {
+		getCurrentTitle();
+	}, [getCurrentTitle]);
+
 	return (
 		<>
 			{/* Desktop Nav */}
-			<header className="gl_header">
+			<header className={`gl_header ${myLocation}`}>
 				<div className="gl_logo">
-					<img src={getLinkedLogo} alt="getlinked logo" />
+					<img
+						src={getLinkedLogo}
+						alt="getlinked logo"
+						onClick={() => navigate("/")}
+					/>
 				</div>
 
 				<div className="navbar_menu">

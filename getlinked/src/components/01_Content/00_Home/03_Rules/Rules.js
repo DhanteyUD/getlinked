@@ -1,8 +1,8 @@
 import React from "react";
 import "./rules.css";
-import brightStar from "../../../assets/star-bright.svg";
-import faintStar from "../../../assets/star-faint.svg";
-import Ellipse from "../../../assets/Ellipse-1.svg";
+import brightStar from "../../../../assets/star-bright.svg";
+import faintStar from "../../../../assets/star-faint.svg";
+import Ellipse from "../../../../assets/Ellipse-1.svg";
 
 function RuleContent() {
 	return (

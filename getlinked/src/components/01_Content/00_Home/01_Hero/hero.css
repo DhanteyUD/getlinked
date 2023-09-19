@@ -1,9 +1,9 @@
 .gl_hero {
   display: flex;
   padding-top: 130px;
-  height: 813px;
+  height: 100vh;
   background:
-    url(../../../assets/Purple-Lens-Flare-PNG.png),
+    url(../../../../assets/Purple-Lens-Flare-PNG.png),
     #150e28 -0.25px 0px / 130.652% 100% no-repeat;
   background-blend-mode: hard-light;
   background-repeat: no-repeat;
@@ -16,7 +16,7 @@
   top: 18%;
   right: 5%;
   color: #fff;
-  font-size: 36px;
+  font-size: 33px;
   font-style: italic;
   font-weight: 700;
   line-height: normal;
@@ -36,8 +36,8 @@
   left: 13%;
 }
 .hero.img_faint_star {
-  top: 28.5%;
-  right: 46%;
+  top: 30%;
+  right: 41%;
 }
 .hero.img_bulb {
   top: 31.8%;
@@ -159,7 +159,7 @@ button:hover:after {
 
 .gl_hero_right {
   background:
-    url(../../../assets/Purple-Lens-Flare-PNG.png),
+    url(../../../../assets/Purple-Lens-Flare-PNG.png),
     #150e28 -0.25px 0px / 130.652% 100% no-repeat;
   background-blend-mode: hard-light;
   background-repeat: no-repeat;

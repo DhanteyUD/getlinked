@@ -2,7 +2,7 @@
   height: 617px;
   flex-shrink: 0;
   background:
-    url(../../../assets/Purple-Lens-Flare-PNG.png), 
+    url(../../../../assets/Purple-Lens-Flare-PNG.png), 
     #150e28 -0.25px 0px / 130.652% 100%;
   background-blend-mode: hard-light;
   background-size: 1000px;
@@ -71,7 +71,7 @@
   align-items: flex-start;
   width: 45%;
   height: 100%;
-  background-image: url("../../../assets/rules-lady.svg");
+  background-image: url("../../../../assets/rules-lady.svg");
   background-repeat: no-repeat;
   background-size: 664px;
   background-position: center;

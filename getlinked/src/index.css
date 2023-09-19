@@ -11,6 +11,10 @@
   --quaternary: #d434fe;
 }
 
+::-webkit-scrollbar {
+  display: none;
+}
+
 body {
   font-family: "Montserrat", sans-serif;
   background-color: var(--secondary);

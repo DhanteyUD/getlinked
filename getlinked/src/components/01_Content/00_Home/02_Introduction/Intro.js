@@ -1,8 +1,8 @@
 import React from "react";
 import "./intro.css";
-import purpleStar from "../../../assets/bright-purple-star.svg";
-import curvedArrow from "../../../assets/curved_arrow.svg";
-import purpleStar2 from "../../../assets/dark-purple-star.svg";
+import purpleStar from "../../../../assets/bright-purple-star.svg";
+import curvedArrow from "../../../../assets/curved_arrow.svg";
+import purpleStar2 from "../../../../assets/dark-purple-star.svg";
 
 function IntroContent() {
 	return (

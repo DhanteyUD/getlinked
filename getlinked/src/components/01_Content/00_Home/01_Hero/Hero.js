@@ -1,13 +1,13 @@
 import React from "react";
 import "./hero.css";
-import curvedSTroke from "../../../assets/curved-stroke.svg";
-import HRViewer from "../../../assets/man-wearing-smart-glasses-touching-virtual-screen 1.png";
-import bubble from "../../../assets/bubble.svg";
-import brightStar from "../../../assets/star-bright.svg";
-import faintStar from "../../../assets/star-faint.svg";
-import bulb from "../../../assets/bulb.svg";
-import chain from "../../../assets/chain.svg";
-import pow from "../../../assets/pow.svg";
+import curvedSTroke from "../../../../assets/curved-stroke.svg";
+import HRViewer from "../../../../assets/man-wearing-smart-glasses-touching-virtual-screen 1.png";
+import bubble from "../../../../assets/bubble.svg";
+import brightStar from "../../../../assets/star-bright.svg";
+import faintStar from "../../../../assets/star-faint.svg";
+import bulb from "../../../../assets/bulb.svg";
+import chain from "../../../../assets/chain.svg";
+import pow from "../../../../assets/pow.svg";
 
 function HeroContent() {
 	return (

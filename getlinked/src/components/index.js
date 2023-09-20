@@ -6,3 +6,6 @@ export { default as RuleContent } from "./01_Content/00_Home/03_Rules/Rules.js";
 
 // Contact:
 export { default as ContactContent } from "./01_Content/01_Contact/01_ContactForm/Contact.js";
+
+// Register:
+export { default as RegistrationContent } from "./01_Content/02_Register/01_RegistrationForm/Registration.js";

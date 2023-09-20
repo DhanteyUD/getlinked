@@ -268,7 +268,7 @@
 }
 
 .register_submit_btn:hover {
-  transform: scale(1.1);
+  transform: scale(1.03);
   transition: 0.5s;
   background: transparent;
   border: 2px solid #ff26b9;

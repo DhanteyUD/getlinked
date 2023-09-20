@@ -126,14 +126,13 @@
 .gl_register_inner_form_container {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 30px;
 }
 
 .gl_register_left_form_div,
 .gl_register_right_form_div {
   display: flex;
   flex-direction: column;
-  width: 48%;
+  width: 47.5%;
   height: auto;
 }
 
@@ -158,7 +157,9 @@
 }
 
 .gl_register_left_form_div_items > input,
-.gl_register_right_form_div_items > input {
+.gl_register_right_form_div_items > input,
+.gl_register_left_form_div_items > select,
+.gl_register_right_form_div_items > select {
   width: 100%;
   height: 47px;
   border-radius: 4px;
@@ -169,21 +170,74 @@
   color: #fff;
   outline: none;
   font-family: "Montserrat", sans-serif;
-  font-size: 12px;
+  font-size: 14px;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
-  /* margin-bottom: 10px; */
+  transition: 0.5s;
 }
 
 .gl_register_left_form_div_items > input::placeholder,
 .gl_register_right_form_div_items > input::placeholder {
-  color: rgba(255, 255, 255, 0.25);;
+  color: rgba(255, 255, 255, 0.25);
+  font-size: 12px;
 }
 
-.gl_register_form_input.textarea {
-  min-height: 119px;
-  padding: 10px 20px;
+.gl_register_left_form_div_items > input:hover,
+.gl_register_right_form_div_items > input:hover,
+.gl_register_left_form_div_items > select:hover,
+.gl_register_right_form_div_items > select:hover {
+  border: 1px solid #d434fe;
+  transition: 0.5s;
+}
+
+.gl_register_left_form_div_items > input:focus,
+.gl_register_right_form_div_items > input:focus,
+.gl_register_left_form_div_items > select:focus,
+.gl_register_right_form_div_items > select:focus {
+  border: 1px solid #ff26b9;
+  transition: 0.5s;
+}
+
+.gl_register_left_form_div_items > select,
+.gl_register_right_form_div_items > select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-image: url("../../../../assets/select-icon.svg");
+  background-repeat: no-repeat;
+  background-position: top 50% right 6%;
+  cursor: pointer;
+}
+
+.gl_review_p {
+  color: #ff26b9;
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 15px;
+}
+
+.gl_agreement_div {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.gl_agreement_div > input {
+  margin-right: 10px;
+  cursor: pointer;
+  accent-color: #ff26b9;
+}
+
+.gl_agreement_div > label {
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 
 .gl_register_form_submit {
@@ -194,7 +248,7 @@
 }
 
 .register_submit_btn {
-  width: 172px;
+  width: 100%;
   height: 53px;
   flex-shrink: 0;
   color: #fff;

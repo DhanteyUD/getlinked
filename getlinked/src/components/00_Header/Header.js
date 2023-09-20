@@ -45,10 +45,10 @@ function Header() {
 					</div>
 
 					<a
-						href="#"
-						className="btn-flip"
+						className={`btn-flip ${myLocation}`}
 						data-back="Register"
 						data-front="Register"
+						onClick={() => navigate("/register")}
 					></a>
 				</div>
 			</header>

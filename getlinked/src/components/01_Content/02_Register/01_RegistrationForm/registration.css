@@ -1,0 +1,12 @@
+.gl_register {
+  display: flex;
+  height: 100%;
+}
+
+.gl_register_container {
+  position: relative;
+  display: flex;
+  width: 100%;
+
+  background-color: pink;
+}

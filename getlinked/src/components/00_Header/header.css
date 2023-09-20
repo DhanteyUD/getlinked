@@ -10,7 +10,7 @@
   padding: 0 128px 25px 128px;
   height: 17%;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.18); 
+  border-bottom: 1px solid rgba(255, 255, 255, 0.18);
   backdrop-filter: blur(10px);
 }
 
@@ -160,4 +160,29 @@
   );
   content: attr(data-front);
   transform: translateY(0) rotateX(0);
+}
+
+/*--------------------------
+  Register Button - Active 
+ ---------------------------*/
+
+.btn-flip.register {
+  opacity: 1;
+  outline: 0;
+  position: relative;
+  letter-spacing: 1px;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 4px;
+  background: linear-gradient(#9a39ff, #ff29b9);
+}
+
+.btn-flip.register::after {
+  opacity: 1;
+  transform: translateY(0) rotateX(0);
+}
+
+.btn-flip.register::before {
+  opacity: 0;
+  transform: translateY(50%) rotateX(90deg);
 }

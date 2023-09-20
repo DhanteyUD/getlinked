@@ -14,7 +14,8 @@
   backdrop-filter: blur(10px);
 }
 
-.gl_header.contact {
+.gl_header.contact,
+.gl_header.register {
   border-bottom: none;
 }
 

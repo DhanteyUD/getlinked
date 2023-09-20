@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./registration.css";
 import PurpleStar from "../../../../assets/purple-gradient-star.svg";
 import faintStar from "../../../../assets/star-faint.svg";
@@ -6,8 +6,21 @@ import brightStar from "../../../../assets/star-bright.svg";
 import darkPurpleStar from "../../../../assets/dark-purple-star.svg";
 import registrationImage from "../../../../assets/3d-graphic-designer-showing-thumbs-up-png 1.svg";
 import registerFormIcon from "../../../../assets/register-form-icon.png";
+import Modal from "../../../Modal/Modal";
+import SuccessModal from "../../../Modal/Success/Success.modal";
 
 function RegistrationContent() {
+	const [showModal, setShowModal] = useState(false);
+	const [modalContent, setModalContent] = useState(null);
+
+	const handleSubmitForm = (e) => {
+		e.preventDefault();
+		setShowModal(true);
+		setModalContent(
+			<SuccessModal component="register" onClose={() => setShowModal(false)} />
+		);
+	};
+
 	return (
 		<>
 			<div className="gl_register">
@@ -143,7 +156,11 @@ function RegistrationContent() {
 									</div>
 
 									<div className="gl_register_form_submit">
-										<button type="submit" className="register_submit_btn">
+										<button
+											type="submit"
+											className="register_submit_btn"
+											onClick={handleSubmitForm}
+										>
 											Register Now
 										</button>
 									</div>
@@ -153,6 +170,8 @@ function RegistrationContent() {
 					</div>
 				</div>
 			</div>
+
+			{showModal && <Modal modalContent={modalContent} />}
 		</>
 	);
 }

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./contact.css";
 import instagram from "../../../../assets/instagram.svg";
 import x from "../../../../assets/x.svg";
@@ -8,8 +8,20 @@ import PurpleStar from "../../../../assets/purple-gradient-star.svg";
 import faintStar from "../../../../assets/star-faint.svg";
 import brightStar from "../../../../assets/star-bright.svg";
 import darkPurpleStar from "../../../../assets/dark-purple-star.svg";
+import Modal from "../../../Modal/Modal";
+import SuccessModal from "../../../Modal/Success/Success.modal";
 
 function ContactContent() {
+	const [showModal, setShowModal] = useState(false);
+	const [modalContent, setModalContent] = useState(null);
+
+	const handleSubmitForm = (e) => {
+		e.preventDefault();
+		setShowModal(true);
+		setModalContent(
+			<SuccessModal component="contact" onClose={() => setShowModal(false)} />
+		);
+	};
 	return (
 		<>
 			<div className="gl_contact">
@@ -70,7 +82,11 @@ function ContactContent() {
 									placeholder="Message"
 								/>
 								<div className="gl_contact_form_submit">
-									<button type="submit" className="contact_submit_btn">
+									<button
+										type="submit"
+										className="contact_submit_btn"
+										onClick={handleSubmitForm}
+									>
 										Submit
 									</button>
 								</div>
@@ -79,6 +95,8 @@ function ContactContent() {
 					</div>
 				</div>
 			</div>
+
+			{showModal && <Modal modalContent={modalContent} />}
 		</>
 	);
 }

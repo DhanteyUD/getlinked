@@ -124,6 +124,19 @@ function RegistrationContent() {
 										</div>
 									</div>
 								</div>
+
+								<p className="gl_review_p">
+									Please review your registration details before submitting
+								</p>
+
+								<div className="gl_agreement_div">
+									<input type="checkbox" id="agreement" name="agreement" />
+									<label htmlFor="agreement">
+										I agreed with the event terms and conditions and privacy
+										policy
+									</label>
+								</div>
+
 								<div className="gl_register_form_submit">
 									<button type="submit" className="register_submit_btn">
 										Submit

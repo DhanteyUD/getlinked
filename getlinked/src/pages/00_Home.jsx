@@ -6,6 +6,7 @@ import {
 	RuleContent,
 	AttributeContent,
 	FAQsContent,
+	TimelineContent,
 } from "../components";
 
 function Home() {
@@ -18,6 +19,7 @@ function Home() {
 				<RuleContent />
 				<AttributeContent />
 				<FAQsContent />
+				<TimelineContent />
 			</div>
 		</>
 	);

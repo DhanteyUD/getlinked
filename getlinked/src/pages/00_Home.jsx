@@ -1,5 +1,11 @@
 import React from "react";
-import { Header, HeroContent, IntroContent, RuleContent } from "../components";
+import {
+	Header,
+	HeroContent,
+	IntroContent,
+	RuleContent,
+	AttributeContent,
+} from "../components";
 
 function Home() {
 	return (
@@ -9,6 +15,7 @@ function Home() {
 				<HeroContent />
 				<IntroContent />
 				<RuleContent />
+				<AttributeContent />
 			</div>
 		</>
 	);

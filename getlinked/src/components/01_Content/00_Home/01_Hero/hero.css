@@ -105,7 +105,6 @@
   font-weight: 500;
   line-height: normal;
   margin-bottom: 40px;
-  transition: 0.3s !important;
   transition: all 0.5s;
   cursor: pointer;
   display: inline-block;
@@ -126,7 +125,7 @@
   padding-left: 8px;
 }
 
-button:hover:after {
+.gl_hero_left > button:hover:after {
   opacity: 1;
   right: 10px;
 }

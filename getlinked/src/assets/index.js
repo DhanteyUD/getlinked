@@ -13,3 +13,6 @@ export { default as ladyHallo } from "./attribute-lady-hallo.svg";
 export { default as qn1 } from "./qnMrk-1.svg";
 export { default as qn2 } from "./qnMrk-2.svg";
 export { default as faqMan } from "./faq-man.svg";
+
+// Prize:
+export { default as prizeCup } from "./prize-cup.svg";

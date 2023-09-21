@@ -7,6 +7,7 @@ import {
 	AttributeContent,
 	FAQsContent,
 	TimelineContent,
+	PrizeContent,
 } from "../components";
 
 function Home() {
@@ -20,6 +21,7 @@ function Home() {
 				<AttributeContent />
 				<FAQsContent />
 				<TimelineContent />
+				<PrizeContent />
 			</div>
 		</>
 	);

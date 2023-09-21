@@ -462,7 +462,7 @@ export const Getlinked = () => {
 				/> */}
 				<div className="overlap-5">
 					<div className="overlap-6">
-						<img
+						{/* <img
 							className="line-6"
 							alt="Line"
 							src="https://c.animaapp.com/zMz5XxGb/img/line-3-1.svg"
@@ -471,37 +471,37 @@ export const Getlinked = () => {
 							<div className="div-wrapper">
 								<div className="text-wrapper-2">Read More</div>
 							</div>
-						</button>
-						<img
+						</button> */}
+						{/* <img
 							className="star-10"
 							alt="Star"
 							src="https://c.animaapp.com/zMz5XxGb/img/star-19@2x.png"
-						/>
-						<img
+						/> */}
+						{/* <img
 							className="star-11"
 							alt="Star"
 							src="https://c.animaapp.com/zMz5XxGb/img/star-19@2x.png"
-						/>
-						<img
+						/> */}
+						{/* <img
 							className="sata-gra-4"
 							alt="Sata gra"
 							src="https://c.animaapp.com/zMz5XxGb/img/sata-gra-6@2x.png"
-						/>
-						<img
+						/> */}
+						{/* <img
 							className="sata-gra-5"
 							alt="Sata gra"
 							src="https://c.animaapp.com/zMz5XxGb/img/sata-gra-6@2x.png"
-						/>
-						<img
+						/> */}
+						{/* <img
 							className="star-pu-4"
 							alt="Star pu"
 							src="https://c.animaapp.com/zMz5XxGb/img/star-pu-5@2x.png"
-						/>
-						<img
+						/> */}
+						{/* <img
 							className="star-pu-5"
 							alt="Star pu"
 							src="https://c.animaapp.com/zMz5XxGb/img/star-pu-5@2x.png"
-						/>
+						/> */}
 						<div className="testimonials">
 							<div className="overlap-7">
 								<img
@@ -557,23 +557,23 @@ export const Getlinked = () => {
 							alt="Element"
 							src="https://c.animaapp.com/zMz5XxGb/img/9486889-1.png"
 						/>
-						<img
+						{/* <img
 							className="star-15"
 							alt="Star"
 							src="https://c.animaapp.com/zMz5XxGb/img/star-23@2x.png"
-						/>
-						<div className="text-wrapper-20">Partners and Sponsors</div>
-						<img
+						/> */}
+						{/* <div className="text-wrapper-20">Partners and Sponsors</div> */}
+						{/* <img
 							className="purple-lens-flare-8"
 							alt="Purple lens flare"
 							src="https://c.animaapp.com/zMz5XxGb/img/purple-lens-flare-png-3.png"
-						/>
-						<img
+						/> */}
+						{/* <img
 							className="purple-lens-flare-9"
 							alt="Purple lens flare"
 							src="https://c.animaapp.com/zMz5XxGb/img/purple-lens-flare-png-2.png"
-						/>
-						<div className="partner-and-sponsors">
+						/> */}
+						{/* <div className="partner-and-sponsors">
 							<div className="partner-and-sponsors-2">
 								<img
 									className="wisper-logo-white"
@@ -643,13 +643,13 @@ export const Getlinked = () => {
 									<div className="text-wrapper-24">Design Studios</div>
 								</div>
 							</div>
-						</div>
-						<p className="getlinked-hackathon">
+						</div> */}
+						{/* <p className="getlinked-hackathon">
 							Getlinked Hackathon 1.0 is honored to have the following major{" "}
 							<br />
 							companies as its partners and sponsors
-						</p>
-						<div className="rectangle-2" />
+						</p> */}
+						{/* <div className="rectangle-2" />
 						<div className="footer-contents">
 							<p className="div-2">
 								<span className="span">get</span>
@@ -707,13 +707,13 @@ export const Getlinked = () => {
 								</div>
 								<div className="text-wrapper-32">+234 679 81819</div>
 							</div>
-						</div>
-						<img
+						</div> */}
+						{/* <img
 							className="sata-gra-7"
 							alt="Sata gra"
 							src="https://c.animaapp.com/zMz5XxGb/img/sata-gra-1@2x.png"
-						/>
-						<img
+						/> */}
+						{/* <img
 							className="sata-gra-8"
 							alt="Sata gra"
 							src="https://c.animaapp.com/zMz5XxGb/img/sata-gra-1@2x.png"
@@ -804,7 +804,7 @@ export const Getlinked = () => {
 							className="element-6"
 							alt="Element"
 							src="https://c.animaapp.com/zMz5XxGb/img/08-1.png"
-						/>
+						/> */}
 						<div className="rewards">
 							<div className="overlap-10">
 								<div className="element-position">
@@ -849,13 +849,15 @@ export const Getlinked = () => {
 							</div>
 						</div>
 					</div>
-					<p className="privacy-policy-and">
+
+					{/* <p className="privacy-policy-and">
 						<span className="span">
 							Privacy Policy and <br />
 						</span>
 						<span className="text-wrapper-8">Terms</span>
-					</p>
-					<p className="below-are-our">
+					</p> */}
+
+					{/* <p className="below-are-our">
 						Below are our privacy &amp; policy, which outline a lot of goodies.{" "}
 						<br />
 						it’s our aim to always take of our participant
@@ -875,7 +877,7 @@ export const Getlinked = () => {
 						alt="Star"
 						src="https://c.animaapp.com/zMz5XxGb/img/star-23@2x.png"
 					/>
-					<p className="text-wrapper-45">Last updated on September 12, 2023</p>
+					<p className="text-wrapper-45">Last updated on September 12, 2023</p> */}
 				</div>
 			</div>
 		</div>

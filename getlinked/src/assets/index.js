@@ -8,3 +8,8 @@ export { default as purpleGradientStar } from "./purple-gradient-star.svg";
 // Attribute:
 export { default as attributeLeftImage } from "./attribute-left-image.svg";
 export { default as ladyHallo } from "./attribute-lady-hallo.svg";
+
+// FAQs:
+export { default as qn1 } from "./qnMrk-1.svg";
+export { default as qn2 } from "./qnMrk-2.svg";
+export { default as faqMan } from "./faq-man.svg";

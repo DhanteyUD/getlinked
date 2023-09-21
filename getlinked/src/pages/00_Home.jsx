@@ -5,6 +5,7 @@ import {
 	IntroContent,
 	RuleContent,
 	AttributeContent,
+	FAQsContent,
 } from "../components";
 
 function Home() {
@@ -16,6 +17,7 @@ function Home() {
 				<IntroContent />
 				<RuleContent />
 				<AttributeContent />
+				<FAQsContent />
 			</div>
 		</>
 	);

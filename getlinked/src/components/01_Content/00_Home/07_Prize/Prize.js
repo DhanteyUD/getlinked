@@ -1,5 +1,5 @@
 import React from "react";
-import "./price.css";
+import "./prize.css";
 import {
 	faintStar,
 	brightStar,

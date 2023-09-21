@@ -9,7 +9,7 @@
   width: 100%;
   display: flex;
   position: relative;
-  padding: 50px 100px 50px 100px;
+  padding: 50px 0 0 0;
   background:
     url(../../../../assets/attribute-left-Purple-Lens-Flare-PNG.png),
     #150e28 -204.25px 7px / 119.817% 104.852% no-repeat;
@@ -24,24 +24,25 @@
   height: 100%;
   width: 40%;
   position: relative;
+  padding-left: 100px;
 }
 
 .prize.img_left_purple_gradient_star {
   position: absolute;
-  top: 0;
-  left: 39%;
+  top: 3%;
+  left: 45%;
 }
 .prize.img_left_bright_star1 {
   position: absolute;
-  bottom: 5%;
-  left: 39%;
+  bottom: 10%;
+  left: 43%;
   width: 15px;
   height: 15px;
 }
 .prize.img_left_bright_star2 {
   position: absolute;
-  bottom: 24.5%;
-  right: 13.5%;
+  bottom: 30%;
+  right: 12%;
   width: 20px;
   height: 20px;
 }
@@ -49,7 +50,7 @@
 .prize.img_prize_cup {
   height: 100%;
   width: 100%;
-  padding-top: 80px;
+  padding-top: 20px;
   padding-right: 20px;
 }
 
@@ -59,12 +60,54 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-right: 100px;
+  padding-bottom: 70px;
+  background: url(../../../../assets/contact-form-bottom-right-gradient.png);
+  background-repeat: no-repeat;
+  background-blend-mode: luminosity;
+  background-position: bottom right -300px;
+  background-size: 500px;
+  position: relative;
+}
+
+.prize.img_right_purple_gradient_star {
+  position: absolute;
+  top: 11%;
+  left: 55%;
+  z-index: 1;
+}
+.prize.img_right_bright_star1 {
+  position: absolute;
+  top: 25%;
+  left: 10%;
+  width: 25px;
+  height: 25px;
+}
+.prize.img_right_bright_star2 {
+  position: absolute;
+  bottom: 57%;
+  right: 13%;
+  width: 25px;
+  height: 25px;
+}
+.prize.img_right_faint_star1 {
+  position: absolute;
+  top: 23.5%;
+  right: 54.5%;
+}
+.prize.img_right_faint_star2 {
+  position: absolute;
+  bottom: 5%;
+  right: 40%;
+  width: 25px;
+  height: 25px;
 }
 
 .gl_prize_right_header {
   padding-left: 25%;
   height: 20%;
   width: 100%;
+  z-index: 2;
 }
 
 .gl_prize_right_header > h1 {
@@ -324,69 +367,5 @@
   line-height: 69.2px;
   position: absolute;
   top: 404px;
-  white-space: nowrap;
-}
-
-.privacy-policy-and {
-  color: transparent;
-  font-family: "Clash Display", Helvetica;
-  font-size: 32px;
-  font-weight: 700;
-  left: 205px;
-  letter-spacing: 0;
-  line-height: normal;
-  position: absolute;
-  top: 2152px;
-}
-
-.below-are-our {
-  color: #ffffff;
-  font-family: "Montserrat", Helvetica;
-  font-size: 14px;
-  font-weight: 400;
-  left: 205px;
-  letter-spacing: 0;
-  line-height: 26.4px;
-  position: absolute;
-  top: 2305px;
-}
-
-.star-pu-6 {
-  height: 28px;
-  left: 751px;
-  object-fit: cover;
-  position: absolute;
-  top: 2258px;
-  width: 23px;
-}
-
-.star-22 {
-  height: 32px;
-  left: 532px;
-  object-fit: cover;
-  position: absolute;
-  top: 2143px;
-  width: 26px;
-}
-
-.star-23 {
-  height: 32px;
-  left: 1411px;
-  object-fit: cover;
-  position: absolute;
-  top: 2826px;
-  width: 26px;
-}
-
-.text-wrapper-45 {
-  color: #ffffffbf;
-  font-family: "Montserrat", Helvetica;
-  font-size: 14px;
-  font-weight: 400;
-  left: 205px;
-  letter-spacing: 0;
-  line-height: 27.5px;
-  position: absolute;
-  top: 2247px;
   white-space: nowrap;
 }

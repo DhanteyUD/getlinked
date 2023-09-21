@@ -35,6 +35,31 @@ function PrizeContent() {
 						/>
 					</div>
 					<div className="gl_prize_container_right">
+						<img
+							src={brightStar}
+							alt="bright star"
+							className="prize img_right_bright_star1"
+						/>
+						<img
+							src={brightStar}
+							alt="bright star"
+							className="prize img_right_bright_star2"
+						/>
+						<img
+							src={purpleGradientStar}
+							alt="purple star"
+							className="prize img_right_purple_gradient_star"
+						/>
+						<img
+							src={faintStar}
+							alt="faint star"
+							className="prize img_right_faint_star1"
+						/>
+						<img
+							src={faintStar}
+							alt="faint star"
+							className="prize img_right_faint_star2"
+						/>
 						<div className="gl_prize_right_header">
 							<h1>
 								Prizes and <br />

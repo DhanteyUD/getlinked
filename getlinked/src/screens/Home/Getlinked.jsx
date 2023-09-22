@@ -472,21 +472,21 @@ export const Getlinked = () => {
 								<div className="text-wrapper-2">Read More</div>
 							</div>
 						</button> */}
-						{/* <img
+						<img
 							className="star-10"
 							alt="Star"
 							src="https://c.animaapp.com/zMz5XxGb/img/star-19@2x.png"
-						/> */}
+						/>
 						{/* <img
 							className="star-11"
 							alt="Star"
 							src="https://c.animaapp.com/zMz5XxGb/img/star-19@2x.png"
 						/> */}
-						{/* <img
+						<img
 							className="sata-gra-4"
 							alt="Sata gra"
 							src="https://c.animaapp.com/zMz5XxGb/img/sata-gra-6@2x.png"
-						/> */}
+						/>
 						{/* <img
 							className="sata-gra-5"
 							alt="Sata gra"
@@ -502,78 +502,24 @@ export const Getlinked = () => {
 							alt="Star pu"
 							src="https://c.animaapp.com/zMz5XxGb/img/star-pu-5@2x.png"
 						/> */}
-						<div className="testimonials">
-							<div className="overlap-7">
-								<img
-									className="purple-lens-flare-6"
-									alt="Purple lens flare"
-									src="https://c.animaapp.com/zMz5XxGb/img/purple-lens-flare-png-9.png"
-								/>
-								<img
-									className="purple-lens-flare-7"
-									alt="Purple lens flare"
-									src="https://c.animaapp.com/zMz5XxGb/img/purple-lens-flare-png-6.png"
-								/>
-								<p className="highlight-of-the">
-									Highlight of the prizes or rewards for winners and
-									<br />
-									for participants.
-								</p>
-								<img
-									className="star-12"
-									alt="Star"
-									src="https://c.animaapp.com/zMz5XxGb/img/star-23@2x.png"
-								/>
-								<img
-									className="star-13"
-									alt="Star"
-									src="https://c.animaapp.com/zMz5XxGb/img/star-19@2x.png"
-								/>
-								<img
-									className="star-14"
-									alt="Star"
-									src="https://c.animaapp.com/zMz5XxGb/img/star-19@2x.png"
-								/>
-								<img
-									className="sata-gra-6"
-									alt="Sata gra"
-									src="https://c.animaapp.com/zMz5XxGb/img/sata-gra-6@2x.png"
-								/>
-								<img
-									className="premium-photo"
-									alt="Premium photo"
-									src="https://c.animaapp.com/zMz5XxGb/img/premium-photo-1664443577580-dd2674e9d359-1.png"
-								/>
-								<p className="prizes-and-rewards">
-									<span className="span">
-										Prizes and <br />
-									</span>
-									<span className="text-wrapper-8">Rewards</span>
-								</p>
-							</div>
-						</div>
-						<img
-							className="element-5"
-							alt="Element"
-							src="https://c.animaapp.com/zMz5XxGb/img/9486889-1.png"
-						/>
+
 						{/* <img
 							className="star-15"
 							alt="Star"
 							src="https://c.animaapp.com/zMz5XxGb/img/star-23@2x.png"
 						/> */}
-						{/* <div className="text-wrapper-20">Partners and Sponsors</div> */}
-						{/* <img
+						<div className="text-wrapper-20">Partners and Sponsors</div>
+						<img
 							className="purple-lens-flare-8"
 							alt="Purple lens flare"
 							src="https://c.animaapp.com/zMz5XxGb/img/purple-lens-flare-png-3.png"
-						/> */}
-						{/* <img
+						/>
+						<img
 							className="purple-lens-flare-9"
 							alt="Purple lens flare"
 							src="https://c.animaapp.com/zMz5XxGb/img/purple-lens-flare-png-2.png"
-						/> */}
-						{/* <div className="partner-and-sponsors">
+						/>
+						<div className="partner-and-sponsors">
 							<div className="partner-and-sponsors-2">
 								<img
 									className="wisper-logo-white"
@@ -643,12 +589,12 @@ export const Getlinked = () => {
 									<div className="text-wrapper-24">Design Studios</div>
 								</div>
 							</div>
-						</div> */}
-						{/* <p className="getlinked-hackathon">
+						</div>
+						<p className="getlinked-hackathon">
 							Getlinked Hackathon 1.0 is honored to have the following major{" "}
 							<br />
 							companies as its partners and sponsors
-						</p> */}
+						</p>
 						{/* <div className="rectangle-2" />
 						<div className="footer-contents">
 							<p className="div-2">
@@ -805,49 +751,6 @@ export const Getlinked = () => {
 							alt="Element"
 							src="https://c.animaapp.com/zMz5XxGb/img/08-1.png"
 						/> */}
-						<div className="rewards">
-							<div className="overlap-10">
-								<div className="element-position">
-									<div className="overlap-group-2">
-										<div className="rectangle-4" />
-										<img
-											className="silver-medal"
-											alt="Silver medal"
-											src="https://c.animaapp.com/zMz5XxGb/img/silver-medal-1@2x.png"
-										/>
-										<div className="text-wrapper-36">2nd</div>
-										<div className="text-wrapper-37">Runner</div>
-										<div className="text-wrapper-38">N300,000</div>
-									</div>
-								</div>
-								<div className="element-rd-position">
-									<div className="overlap-11">
-										<div className="rectangle-5" />
-										<img
-											className="bronze-medal"
-											alt="Bronze medal"
-											src="https://c.animaapp.com/zMz5XxGb/img/bronze-medal-1@2x.png"
-										/>
-										<div className="text-wrapper-39">3rd</div>
-										<div className="text-wrapper-40">Runner</div>
-										<div className="text-wrapper-41">N150,000</div>
-									</div>
-								</div>
-								<div className="element-st-position">
-									<div className="overlap-12">
-										<div className="rectangle-6" />
-										<img
-											className="gold-medal"
-											alt="Gold medal"
-											src="https://c.animaapp.com/zMz5XxGb/img/gold-medal-1@2x.png"
-										/>
-										<div className="text-wrapper-42">1st</div>
-										<div className="text-wrapper-43">Runner</div>
-										<div className="text-wrapper-44">N400,000</div>
-									</div>
-								</div>
-							</div>
-						</div>
 					</div>
 
 					{/* <p className="privacy-policy-and">

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./registration.css";
 import PurpleStar from "../../../../assets/purple-gradient-star.svg";
 import faintStar from "../../../../assets/star-faint.svg";
@@ -12,6 +12,10 @@ import SuccessModal from "../../../Modal/Success/Success.modal";
 function RegistrationContent() {
 	const [showModal, setShowModal] = useState(false);
 	const [modalContent, setModalContent] = useState(null);
+
+	useEffect(() => {
+		document.title = "GetLinked | Register";
+	});
 
 	const handleSubmitForm = (e) => {
 		e.preventDefault();

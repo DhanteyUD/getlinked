@@ -18,6 +18,25 @@
   background-position: top -140px left;
   background-size: 1000px;
   position: relative;
+  z-index: 2;
+}
+
+.gl_prize_container::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background:
+    url(../../../../assets/attribute-left-Purple-Lens-Flare-PNG.png),
+    #150e28 -204.25px 7px / 119.817% 104.852% no-repeat;
+  background-repeat: no-repeat;
+  background-blend-mode: hard-light;
+  background-position: top -150px left -150px;
+  z-index: -1;
+  opacity: 0.3;
+  rotate: 180deg;
 }
 
 .gl_prize_container_left {
@@ -62,12 +81,6 @@
   align-items: center;
   padding-right: 100px;
   padding-bottom: 70px;
-  background: url(../../../../assets/contact-form-bottom-right-gradient.png);
-  background-repeat: no-repeat;
-  background-blend-mode: luminosity;
-  background-position: bottom right -300px;
-  background-size: 500px;
-  position: relative;
 }
 
 .prize.img_right_purple_gradient_star {

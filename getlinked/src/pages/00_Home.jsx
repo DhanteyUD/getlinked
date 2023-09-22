@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import {
 	Header,
 	HeroContent,
@@ -8,9 +8,14 @@ import {
 	FAQsContent,
 	TimelineContent,
 	PrizeContent,
+	SponsorsContent,
 } from "../components";
 
 function Home() {
+	useEffect(() => {
+		document.title = "GetLinked - Welcome 🎉";
+	});
+
 	return (
 		<>
 			<div className="app">
@@ -22,6 +27,7 @@ function Home() {
 				<FAQsContent />
 				<TimelineContent />
 				<PrizeContent />
+				<SponsorsContent />
 			</div>
 		</>
 	);

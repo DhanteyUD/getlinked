@@ -81,6 +81,7 @@
   align-items: center;
   padding-right: 100px;
   padding-bottom: 70px;
+  position: relative;
 }
 
 .prize.img_right_purple_gradient_star {

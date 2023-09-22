@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./contact.css";
 import instagram from "../../../../assets/instagram.svg";
 import x from "../../../../assets/x.svg";
@@ -15,6 +15,10 @@ function ContactContent() {
 	const [showModal, setShowModal] = useState(false);
 	const [modalContent, setModalContent] = useState(null);
 
+	useEffect(() => {
+		document.title = "GetLinked | Contact";
+	});
+
 	const handleSubmitForm = (e) => {
 		e.preventDefault();
 		setShowModal(true);
@@ -22,6 +26,7 @@ function ContactContent() {
 			<SuccessModal component="contact" onClose={() => setShowModal(false)} />
 		);
 	};
+
 	return (
 		<>
 			<div className="gl_contact">

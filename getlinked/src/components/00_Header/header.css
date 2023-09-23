@@ -1,3 +1,8 @@
+.close_menu_icon_mobile,
+.open_menu_icon_mobile {
+  display: none;
+}
+
 .gl_header {
   /* position: fixed; */
   z-index: 100;
@@ -43,7 +48,7 @@
 
 .navbar_link {
   color: #fff;
-  font-family: Montserrat;
+  font-family: "Montserrat", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
@@ -186,4 +191,117 @@
 .btn-flip.register::before {
   opacity: 0;
   transform: translateY(50%) rotateX(90deg);
+}
+
+@media screen and (max-width: 968px) {
+  .gl_header {
+    z-index: 100;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 40px;
+    height: 10%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.18);
+    backdrop-filter: blur(10px);
+  }
+
+  .gl_logo > img {
+    width: 100px;
+  }
+
+  .navbar_menu {
+    display: none;
+  }
+
+  .close_menu_icon_mobile {
+    /* position: fixed; */
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    color: #fff;
+    top: 0;
+    right: 0;
+    font-size: 30px;
+    z-index: 999;
+    border: 1px solid #ff26b9;
+    border-radius: 50%;
+  }
+
+  .open_menu_icon_mobile {
+    /* position: fixed; */
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    color: #fff;
+    top: 0;
+    right: 0;
+    z-index: 999;
+    width: 25px;
+    height: 25px;
+  }
+
+  .mobile_gl_header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 492px;
+    background-color: #150e28;
+    padding: 150px 50px 0 50px;
+    display: flex;
+    flex-direction: column;
+    z-index: 99;
+    transition: all 0.5s ease-in-out;
+  }
+
+  .mobile_navbar_menu {
+    height: 220px;
+  }
+
+  .navbar_links {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 60%;
+    margin-bottom: 20px;
+  }
+  .navbar_link {
+    color: #fff;
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-decoration: none;
+    position: relative;
+    margin-bottom: 25px;
+    padding: 0;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+  }
+
+  .mobile_btn-flip {
+    width: 172px;
+    height: 53px;
+    flex-shrink: 0;
+    color: #fff;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-bottom: 40px;
+    transition: all 0.5s;
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+  }
+
+  .mobile_btn-flip.register {
+    background: none;
+    border: 2px solid #ff29b9;
+  }
 }

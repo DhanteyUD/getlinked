@@ -11,10 +11,11 @@
   border: 1px solid #d434fe;
   font-size: 180px;
   color: #fff;
-  padding: 90px 30px;
+  padding: 100px 50px;
   border-radius: 5px;
   margin-bottom: 50px;
   text-shadow: 2px 2px 4px #fe34b9;
+  font-family: "Clash Display", sans-serif;
 }
 
 .error-page-text {

@@ -188,19 +188,25 @@
   .attribute.bright_purple_star {
     position: absolute;
     top: 7%;
-    left: 25%;
+    left: 45%;
+    width: 15px;
+    height: 15px;
   }
 
   .attribute.faint_star {
     position: absolute;
     top: 54%;
     left: 54%;
+    width: 15px;
+    height: 15px;
   }
 
   .attribute.bright_star {
     position: absolute;
-    bottom: 10%;
+    bottom: -890px;
     right: 8%;
+    width: 15px;
+    height: 15px;
   }
 
   .attribute.img_left_lady_hallo {
@@ -229,6 +235,7 @@
     background-blend-mode: hard-light;
     background-position: bottom right;
     background-size: 300px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.18);
   }
 
   .judging_criteria {

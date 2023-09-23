@@ -10,6 +10,7 @@ import {
 	PrizeContent,
 	SponsorsContent,
 	PolicyContent,
+	Footer,
 } from "../components";
 
 function Home() {
@@ -30,6 +31,7 @@ function Home() {
 				<PrizeContent />
 				<SponsorsContent />
 				<PolicyContent />
+				<Footer />
 			</div>
 		</>
 	);

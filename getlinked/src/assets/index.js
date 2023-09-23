@@ -5,6 +5,12 @@ export { default as brightPurpleStar } from "./bright-purple-star.svg";
 export { default as darkPurpleStar } from "./dark-purple-star.svg";
 export { default as purpleGradientStar } from "./purple-gradient-star.svg";
 
+// Social media:
+export { default as instagram } from "./instagram.svg";
+export { default as x } from "./x.svg";
+export { default as facebook } from "./facebook.svg";
+export { default as linkedIn } from "./linkedin.svg";
+
 // Attribute:
 export { default as attributeLeftImage } from "./attribute-left-image.svg";
 export { default as ladyHallo } from "./attribute-lady-hallo.svg";

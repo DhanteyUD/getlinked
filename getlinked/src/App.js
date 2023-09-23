@@ -1,7 +1,6 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
-import { NotFound, Home, Contact, Register } from "./pages";
-import { Getlinked } from "./screens/Home";
+import { NotFound, Home, Contact, Register } from "./screens";
 
 function App() {
 	return (
@@ -10,7 +9,6 @@ function App() {
 			<Route path="/" exact element={<Home />} />
 			<Route path="/contact" exact element={<Contact />} />
 			<Route path="/register" exact element={<Register />} />
-			<Route path="/timeline" exact element={<Getlinked />} />
 		</Routes>
 	);
 }

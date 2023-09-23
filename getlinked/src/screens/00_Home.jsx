@@ -43,6 +43,8 @@ function Home() {
 					<Header />
 					<HeroContent />
 					<IntroContent />
+					<RuleContent />
+					<AttributeContent />
 				</div>
 			)}
 		</>

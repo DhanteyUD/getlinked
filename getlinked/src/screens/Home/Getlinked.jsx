@@ -466,27 +466,17 @@ export const Getlinked = () => {
 							className="line-6"
 							alt="Line"
 							src="https://c.animaapp.com/zMz5XxGb/img/line-3-1.svg"
-						/>
+						/> */}
 						<button className="button">
 							<div className="div-wrapper">
 								<div className="text-wrapper-2">Read More</div>
 							</div>
-						</button> */}
-						<img
-							className="star-10"
-							alt="Star"
-							src="https://c.animaapp.com/zMz5XxGb/img/star-19@2x.png"
-						/>
+						</button>
 						{/* <img
 							className="star-11"
 							alt="Star"
 							src="https://c.animaapp.com/zMz5XxGb/img/star-19@2x.png"
 						/> */}
-						<img
-							className="sata-gra-4"
-							alt="Sata gra"
-							src="https://c.animaapp.com/zMz5XxGb/img/sata-gra-6@2x.png"
-						/>
 						{/* <img
 							className="sata-gra-5"
 							alt="Sata gra"
@@ -508,93 +498,6 @@ export const Getlinked = () => {
 							alt="Star"
 							src="https://c.animaapp.com/zMz5XxGb/img/star-23@2x.png"
 						/> */}
-						<div className="text-wrapper-20">Partners and Sponsors</div>
-						<img
-							className="purple-lens-flare-8"
-							alt="Purple lens flare"
-							src="https://c.animaapp.com/zMz5XxGb/img/purple-lens-flare-png-3.png"
-						/>
-						<img
-							className="purple-lens-flare-9"
-							alt="Purple lens flare"
-							src="https://c.animaapp.com/zMz5XxGb/img/purple-lens-flare-png-2.png"
-						/>
-						<div className="partner-and-sponsors">
-							<div className="partner-and-sponsors-2">
-								<img
-									className="wisper-logo-white"
-									alt="Wisper logo white"
-									src="https://c.animaapp.com/zMz5XxGb/img/wisper-logo-white@2x.png"
-								/>
-								<img
-									className="liberty-company-logo"
-									alt="Liberty company logo"
-									src="https://c.animaapp.com/zMz5XxGb/img/liberty-company-logo-white-colour@2x.png"
-								/>
-								<img
-									className="liberty-company-logo-2"
-									alt="Liberty company logo"
-									src="https://c.animaapp.com/zMz5XxGb/img/liberty-company-logo-white@2x.png"
-								/>
-								<img
-									className="line-7"
-									alt="Line"
-									src="https://c.animaapp.com/zMz5XxGb/img/line-12.svg"
-								/>
-								<img
-									className="line-8"
-									alt="Line"
-									src="https://c.animaapp.com/zMz5XxGb/img/line-18.svg"
-								/>
-								<img
-									className="line-9"
-									alt="Line"
-									src="https://c.animaapp.com/zMz5XxGb/img/line-19.svg"
-								/>
-								<img
-									className="line-10"
-									alt="Line"
-									src="https://c.animaapp.com/zMz5XxGb/img/line-13.svg"
-								/>
-								<img
-									className="line-11"
-									alt="Line"
-									src="https://c.animaapp.com/zMz5XxGb/img/line-16.svg"
-								/>
-								<img
-									className="line-12"
-									alt="Line"
-									src="https://c.animaapp.com/zMz5XxGb/img/line-14.svg"
-								/>
-								<img
-									className="line-13"
-									alt="Line"
-									src="https://c.animaapp.com/zMz5XxGb/img/line-17.svg"
-								/>
-								<img
-									className="winwise-logo-white"
-									alt="Winwise logo white"
-									src="https://c.animaapp.com/zMz5XxGb/img/winwise-logo-white-colour-1@2x.png"
-								/>
-								<p className="paybox">
-									<span className="span">Pay</span>
-									<span className="text-wrapper-21">box</span>
-								</p>
-								<div className="vizual-plus">
-									<p className="vuzual-plus">
-										<span className="span">Vuzual </span>
-										<span className="text-wrapper-22">Plus </span>
-										<span className="text-wrapper-23">&nbsp;</span>
-									</p>
-									<div className="text-wrapper-24">Design Studios</div>
-								</div>
-							</div>
-						</div>
-						<p className="getlinked-hackathon">
-							Getlinked Hackathon 1.0 is honored to have the following major{" "}
-							<br />
-							companies as its partners and sponsors
-						</p>
 						{/* <div className="rectangle-2" />
 						<div className="footer-contents">
 							<p className="div-2">
@@ -659,7 +562,7 @@ export const Getlinked = () => {
 							alt="Sata gra"
 							src="https://c.animaapp.com/zMz5XxGb/img/sata-gra-1@2x.png"
 						/> */}
-						{/* <img
+						<img
 							className="sata-gra-8"
 							alt="Sata gra"
 							src="https://c.animaapp.com/zMz5XxGb/img/sata-gra-1@2x.png"
@@ -750,17 +653,17 @@ export const Getlinked = () => {
 							className="element-6"
 							alt="Element"
 							src="https://c.animaapp.com/zMz5XxGb/img/08-1.png"
-						/> */}
+						/>
 					</div>
 
-					{/* <p className="privacy-policy-and">
+					<p className="privacy-policy-and">
 						<span className="span">
 							Privacy Policy and <br />
 						</span>
 						<span className="text-wrapper-8">Terms</span>
-					</p> */}
+					</p>
 
-					{/* <p className="below-are-our">
+					<p className="below-are-our">
 						Below are our privacy &amp; policy, which outline a lot of goodies.{" "}
 						<br />
 						it’s our aim to always take of our participant
@@ -780,7 +683,7 @@ export const Getlinked = () => {
 						alt="Star"
 						src="https://c.animaapp.com/zMz5XxGb/img/star-23@2x.png"
 					/>
-					<p className="text-wrapper-45">Last updated on September 12, 2023</p> */}
+					<p className="text-wrapper-45">Last updated on September 12, 2023</p>
 				</div>
 			</div>
 		</div>

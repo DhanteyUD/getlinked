@@ -1,5 +1,5 @@
 .error-page {
-  background-color: #528dc2;
+  background-color: #150e28;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -8,13 +8,13 @@
 }
 
 .error-page > h1 {
-  background-color: #002564;
+  border: 1px solid #d434fe;
   font-size: 180px;
   color: #fff;
   padding: 90px 30px;
-  border-radius: 50%;
+  border-radius: 5px;
   margin-bottom: 50px;
-  text-shadow: 2px 2px 4px #528dc2;
+  text-shadow: 2px 2px 4px #fe34b9;
 }
 
 .error-page-text {
@@ -23,26 +23,30 @@
 }
 
 .go-back-home-btn {
-  width: 180px;
-  height: 45px;
   border: none;
-  background-color: #58adcc;
-  border-radius: 20px;
   color: #fff;
   padding: 7px 25px;
   transition: 0.2s;
   border: 1px solid #fff;
+  width: 174px;
+  height: 53px;
+  flex-shrink: 0;
+  color: #fff;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  transition: all 0.5s;
+  cursor: pointer;
+  border-radius: 5px;
 }
 
 .go-back-home-btn:hover {
-  background-color: #002564;
-  transition: 0.2s;
-  border: none;
-  border: 1px solid #002564;
+  width: 220px;
 }
 
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 968px) {
   .error-page > h1 {
     font-size: 120px;
     padding: 80px 20px;

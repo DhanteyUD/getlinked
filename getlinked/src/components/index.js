@@ -8,6 +8,7 @@ export { default as FAQsContent } from "./01_Content/00_Home/05_FAQs/FAQs.js";
 export { default as TimelineContent } from "./01_Content/00_Home/06_Timeline/Timeline.js";
 export { default as PrizeContent } from "./01_Content/00_Home/07_Prize/Prize.js";
 export { default as SponsorsContent } from "./01_Content/00_Home/08_Sponsors/Sponsors.js";
+export { default as PolicyContent } from "./01_Content/00_Home/09_Policy/Policy.js";
 
 // Contact:
 export { default as ContactContent } from "./01_Content/01_Contact/01_ContactForm/Contact.js";

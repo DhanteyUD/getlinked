@@ -9,6 +9,7 @@ import {
 	TimelineContent,
 	PrizeContent,
 	SponsorsContent,
+	PolicyContent,
 } from "../components";
 
 function Home() {
@@ -28,6 +29,7 @@ function Home() {
 				<TimelineContent />
 				<PrizeContent />
 				<SponsorsContent />
+				<PolicyContent />
 			</div>
 		</>
 	);

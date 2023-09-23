@@ -14,7 +14,7 @@ function NotFound() {
 						src="https://cdn.lordicon.com/bmnlikjh.json"
 						trigger="loop"
 						delay="2000"
-						colors="primary:#fff"
+						colors="primary:#fe34b9"
 						style={{ width: "130px", height: "130px" }}
 					></lord-icon>
 					4

@@ -8,8 +8,12 @@ import faintStar from "../../../../assets/star-faint.svg";
 import bulb from "../../../../assets/bulb.svg";
 import chain from "../../../../assets/chain.svg";
 import pow from "../../../../assets/pow.svg";
+import { useWindowSize } from "react-hooks-window-size";
 
 function HeroContent() {
+	const size = useWindowSize();
+	const desktop = size.width > 968;
+
 	return (
 		<>
 			<div className="gl_hero">
@@ -32,10 +36,26 @@ function HeroContent() {
 
 				<div className="gl_hero_container">
 					<div className="gl_hero_left">
-						<h1>
-							getlinked Tech <br />
-							Hackathon <span className="colored_span">1.0</span>
-						</h1>
+						{desktop ? (
+							<h1>
+								getlinked Tech <br />
+								Hackathon <span className="colored_span">1.0</span>
+							</h1>
+						) : (
+							<h1>
+								getlinked Tech <br />
+								Hackathon{" "}
+								<span className="colored_span">
+									1.0
+									<img
+										src={chain}
+										alt="Chain"
+										className="hero mobile_img_chain"
+									/>
+									<img src={pow} alt="Pow" className="hero mobile_img_pow" />
+								</span>
+							</h1>
+						)}
 						<p>
 							Participate in getlinked tech Hackathon 2023 stand a chance to win
 							a Big prize

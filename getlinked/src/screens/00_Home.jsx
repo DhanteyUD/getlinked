@@ -41,6 +41,8 @@ function Home() {
 			) : (
 				<div className="app">
 					<Header />
+					<HeroContent />
+					<IntroContent />
 				</div>
 			)}
 		</>

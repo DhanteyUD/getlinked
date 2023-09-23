@@ -196,7 +196,7 @@
 @media screen and (max-width: 968px) {
   .gl_header {
     z-index: 100;
-    position: absolute;
+    position: fixed;
     top: 0;
     width: 100%;
     display: flex;

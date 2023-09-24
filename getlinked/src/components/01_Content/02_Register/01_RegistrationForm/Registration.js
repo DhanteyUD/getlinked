@@ -8,10 +8,13 @@ import registrationImage from "../../../../assets/3d-graphic-designer-showing-th
 import registerFormIcon from "../../../../assets/register-form-icon.png";
 import Modal from "../../../Modal/Modal";
 import SuccessModal from "../../../Modal/Success/Success.modal";
+import { useWindowSize } from "react-hooks-window-size";
 
 function RegistrationContent() {
 	const [showModal, setShowModal] = useState(false);
 	const [modalContent, setModalContent] = useState(null);
+	const size = useWindowSize();
+	const desktop = size.width > 968;
 
 	useEffect(() => {
 		document.title = "GetLinked | Register";
@@ -82,67 +85,79 @@ function RegistrationContent() {
 									<p className="gl_create_account_p">CREATE YOUR ACCOUNT</p>
 
 									<div className="gl_register_inner_form_container">
-										{/* Left */}
-										<div className="gl_register_left_form_div">
-											<div className="gl_register_left_form_div_items">
-												<label htmlFor="teamName">Team’s Name</label>
-												<input
-													type="text"
-													name="teamName"
-													placeholder="Enter the name of your group"
-												/>
+										<div className="gl_register_form_input">
+											{/* Left */}
+											<div className="gl_register_left_form_div">
+												<div className="gl_register_left_form_div_items">
+													<label htmlFor="teamName">Team’s Name</label>
+													<input
+														type="text"
+														name="teamName"
+														placeholder="Enter the name of your group"
+													/>
+												</div>
+												<div className="gl_register_left_form_div_items">
+													<label htmlFor="email">Email</label>
+													<input
+														type="email"
+														name="email"
+														placeholder="Enter your email address"
+													/>
+												</div>
 											</div>
-											<div className="gl_register_left_form_div_items">
-												<label htmlFor="email">Email</label>
-												<input
-													type="email"
-													name="email"
-													placeholder="Enter your email address"
-												/>
-											</div>
-											<div className="gl_register_left_form_div_items">
-												<label htmlFor="category">Category</label>
-												<select name="category" id="category">
-													<option disabled selected hidden>
-														Select your category
-													</option>
-													<option value="design">Design</option>
-													<option value="development">Development</option>
-													<option value="marketing">Marketing</option>
-													<option value="business">Business</option>
-												</select>
+
+											{/* Right */}
+											<div className="gl_register_right_form_div">
+												<div className="gl_register_right_form_div_items">
+													<label htmlFor="phone">Phone</label>
+													<input
+														type="phone"
+														name="phone"
+														placeholder="Enter your phone number"
+													/>
+												</div>
+												<div className="gl_register_right_form_div_items">
+													<label htmlFor="projectTopic">Project Topic</label>
+													<input
+														type="text"
+														name="projectTopic"
+														placeholder="What is your group project topic"
+													/>
+												</div>
 											</div>
 										</div>
 
-										{/* Right */}
-										<div className="gl_register_right_form_div">
-											<div className="gl_register_right_form_div_items">
-												<label htmlFor="phone">Phone</label>
-												<input
-													type="phone"
-													name="phone"
-													placeholder="Enter your phone number"
-												/>
+										<div className="gl_register_form_select">
+											{/* Left */}
+											<div className="select gl_register_left_form_div">
+												<div className="gl_register_left_form_div_items">
+													<label htmlFor="category">Category</label>
+													<select name="category" id="category">
+														<option disabled selected hidden>
+															Select your category
+														</option>
+														<option value="design">Design</option>
+														<option value="development">Development</option>
+														<option value="marketing">Marketing</option>
+														<option value="business">Business</option>
+													</select>
+												</div>
 											</div>
-											<div className="gl_register_right_form_div_items">
-												<label htmlFor="projectTopic">Project Topic</label>
-												<input
-													type="text"
-													name="projectTopic"
-													placeholder="What is your group project topic"
-												/>
-											</div>
-											<div className="gl_register_right_form_div_items">
-												<label htmlFor="groupSize">Group Size</label>
-												<select name="groupSize" id="groupSize">
-													<option disabled selected hidden>
-														Select
-													</option>
-													<option value="1-5">1-5</option>
-													<option value="6-10">6-10</option>
-													<option value="11-15">11-15</option>
-													<option value="16-20">16-20</option>
-												</select>
+
+											{/* Right */}
+											<div className="select gl_register_right_form_div">
+												<div className="gl_register_right_form_div_items">
+													<label htmlFor="groupSize">Group Size</label>
+													<select name="groupSize" id="groupSize">
+														<option disabled selected hidden>
+															Select
+														</option>
+														<option value="1-5">1-5</option>
+														<option value="6-10">6-10</option>
+														<option value="11-15">11-15</option>
+														<option value="16-20">16-20</option>
+													</select>
+												</div>
 											</div>
 										</div>
 									</div>
@@ -165,7 +180,7 @@ function RegistrationContent() {
 											className="register_submit_btn"
 											onClick={handleSubmitForm}
 										>
-											Register Now
+											{desktop ? "Register Now" : "Submit"}
 										</button>
 									</div>
 								</div>

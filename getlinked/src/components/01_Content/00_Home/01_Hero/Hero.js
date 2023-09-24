@@ -9,10 +9,12 @@ import bulb from "../../../../assets/bulb.svg";
 import chain from "../../../../assets/chain.svg";
 import pow from "../../../../assets/pow.svg";
 import { useWindowSize } from "react-hooks-window-size";
+import { useNavigate } from "react-router-dom";
 
 function HeroContent() {
 	const size = useWindowSize();
 	const desktop = size.width > 968;
+	const navigate = useNavigate();
 
 	return (
 		<>
@@ -60,7 +62,7 @@ function HeroContent() {
 							Participate in getlinked tech Hackathon 2023 stand a chance to win
 							a Big prize
 						</p>
-						<button>
+						<button onClick={() => navigate("/register")}>
 							<span>Register</span>
 						</button>
 						<div className="gr_hero_countdown_clock">

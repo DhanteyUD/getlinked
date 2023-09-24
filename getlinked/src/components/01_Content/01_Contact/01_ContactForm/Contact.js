@@ -13,6 +13,9 @@ import SuccessModal from "../../../Modal/Success/Success.modal";
 import { IoChevronBackCircleOutline } from "react-icons/io5";
 import { useNavigate } from "react-router-dom";
 import { useWindowSize } from "react-hooks-window-size";
+import { contactModel } from "../../../../models/contact.model";
+import axios from "axios";
+import config from "../../../../config.json";
 
 function ContactContent() {
 	const navigate = useNavigate();
@@ -20,17 +23,38 @@ function ContactContent() {
 	const [modalContent, setModalContent] = useState(null);
 	const size = useWindowSize();
 	const desktop = size.width > 968;
+	const [data, setData] = useState(contactModel);
+	const [loading, setLoading] = useState(false);
 
 	useEffect(() => {
 		document.title = "GetLinked | Contact";
 	});
 
-	const handleSubmitForm = (e) => {
-		e.preventDefault();
-		setShowModal(true);
-		setModalContent(
-			<SuccessModal component="contact" onClose={() => setShowModal(false)} />
-		);
+	const handleFormChange = (e) => {
+		setData({ ...data, [e.target.name]: e.target.value });
+	};
+
+	const handleSubmitForm = async (e) => {
+		setLoading(true);
+		try {
+			e.preventDefault();
+
+			// eslint-disable-next-line no-unused-vars
+			const info = await axios.postForm(
+				`${config.baseUrl}/hackathon/contact-form`,
+				data
+			);
+
+			setLoading(false);
+			setShowModal(true);
+			setModalContent(
+				<SuccessModal component="contact" onClose={() => setShowModal(false)} />
+			);
+			setData(contactModel);
+		} catch (error) {
+			console.log(error);
+			setLoading(false);
+		}
 	};
 
 	return (
@@ -79,7 +103,10 @@ function ContactContent() {
 								className="contact go_home"
 								onClick={() => navigate("/")}
 							/>
-							<form className="gl_contact_form_inner">
+							<form
+								className="gl_contact_form_inner"
+								onSubmit={handleSubmitForm}
+							>
 								<p>Questions or need assistance?</p>
 								<p>Let us know about it!</p>
 								<h5>Email us below to any question related to our event</h5>
@@ -88,12 +115,20 @@ function ContactContent() {
 										type="text"
 										className="gl_contact_form_input"
 										placeholder="First Name"
+										name="first_name"
+										value={data.first_name}
+										onChange={handleFormChange}
+										required
 									/>
 								) : (
 									<input
 										type="text"
 										className="gl_contact_form_input"
 										placeholder="Team's Name"
+										name="first_name"
+										value={data.first_name}
+										onChange={handleFormChange}
+										required
 									/>
 								)}
 								{!desktop && (
@@ -107,18 +142,34 @@ function ContactContent() {
 									type="email"
 									className="gl_contact_form_input"
 									placeholder={desktop ? "Mail" : "Email"}
+									name="email"
+									value={data.email}
+									onChange={handleFormChange}
+									required
 								/>
 								<textarea
 									className="gl_contact_form_input textarea"
 									placeholder="Message"
+									name="message"
+									value={data.message}
+									onChange={handleFormChange}
+									required
 								/>
 								<div className="gl_contact_form_submit">
-									<button
-										type="submit"
-										className="contact_submit_btn"
-										onClick={handleSubmitForm}
-									>
-										Submit
+									<button type="submit" className="contact_submit_btn">
+										{loading ? (
+											<lord-icon
+												src="https://cdn.lordicon.com/pxruxqrv.json"
+												trigger="loop"
+												colors="primary:#fff,secondary:#ff26b9"
+												style={{
+													height: "40px",
+													width: "40px",
+												}}
+											></lord-icon>
+										) : (
+											"Submit"
+										)}
 									</button>
 								</div>
 								{!desktop && (

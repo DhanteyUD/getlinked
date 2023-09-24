@@ -12,6 +12,8 @@ import { useWindowSize } from "react-hooks-window-size";
 import { registerModel } from "../../../../models/register.model";
 import axios from "axios";
 import config from "../../../../config.json";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const backupCategories = [
 	{
@@ -40,6 +42,18 @@ function RegistrationContent() {
 	useEffect(() => {
 		document.title = "GetLinked | Register";
 	});
+
+	const customId = "custom-id-yes";
+
+	// Error Pop Up:
+	const showToastErrorMessage = (error) => {
+		toast.error(error, {
+			position: toast.POSITION.TOP_CENTER,
+			toastId: customId,
+			autoClose: 1500,
+			hideProgressBar: true,
+		});
+	};
 
 	const categoryList = async () => {
 		try {
@@ -81,8 +95,12 @@ function RegistrationContent() {
 				/>
 			);
 			setData(registerModel);
+			const categorySelect = document.getElementById("category");
+			const groupSizeSelect = document.getElementById("group_size");
+			categorySelect.value = "Select your category";
+			groupSizeSelect.value = "Select";
 		} catch (error) {
-			console.log(error?.response?.data?.email);
+			showToastErrorMessage(error?.response?.data?.email[0]);
 			setLoading(false);
 		}
 	};
@@ -305,6 +323,8 @@ function RegistrationContent() {
 			</div>
 
 			{showModal && <Modal modalContent={modalContent} />}
+
+			<ToastContainer />
 		</>
 	);
 }

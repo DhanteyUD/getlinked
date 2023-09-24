@@ -1,7 +1,11 @@
 import React from "react";
 import "./sponsors.css";
+import { useWindowSize } from "react-hooks-window-size";
 
 function SponsorsContent() {
+	const size = useWindowSize();
+	const desktop = size.width > 968;
+
 	return (
 		<>
 			<div className="gl_sponsors">
@@ -10,7 +14,7 @@ function SponsorsContent() {
 						<div className="text-wrapper-20">Partners and Sponsors</div>
 						<p className="getlinked-hackathon">
 							Getlinked Hackathon 1.0 is honored to have the following major{" "}
-							<br />
+							{desktop ? <br /> : ""}
 							companies as its partners and sponsors
 						</p>
 					</div>

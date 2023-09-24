@@ -1,6 +1,6 @@
 .gl_hero {
   display: flex;
-  padding-top: 130px;
+  padding-top: 100px;
   height: 810px;
   background:
     url(../../../../assets/Purple-Lens-Flare-PNG.png),
@@ -163,7 +163,8 @@
     #150e28 -0.25px 0px / 130.652% 100% no-repeat;
   background-blend-mode: hard-light;
   background-repeat: no-repeat;
-  background-size: 800px;
+  background-position: top right -350px;
+  background-size: 900px;
   height: 100%;
   width: 40%;
   padding-top: 40px;

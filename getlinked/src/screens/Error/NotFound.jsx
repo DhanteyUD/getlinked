@@ -15,6 +15,7 @@ function NotFound() {
 						trigger="loop"
 						delay="2000"
 						colors="primary:#fe34b9"
+						className="error-page-icon"
 						style={{ width: "130px", height: "130px" }}
 					></lord-icon>
 					4

@@ -86,19 +86,6 @@ function PrizeContent() {
 											<div className="text-wrapper-38">N300,000</div>
 										</div>
 									</div>
-									<div className="element-rd-position">
-										<div className="overlap-11">
-											<div className="rectangle-5" />
-											<img
-												className="bronze-medal"
-												alt="Bronze medal"
-												src="https://c.animaapp.com/zMz5XxGb/img/bronze-medal-1@2x.png"
-											/>
-											<div className="text-wrapper-39">3rd</div>
-											<div className="text-wrapper-40">Runner</div>
-											<div className="text-wrapper-41">N150,000</div>
-										</div>
-									</div>
 									<div className="element-st-position">
 										<div className="overlap-12">
 											<div className="rectangle-6" />
@@ -110,6 +97,19 @@ function PrizeContent() {
 											<div className="text-wrapper-42">1st</div>
 											<div className="text-wrapper-43">Runner</div>
 											<div className="text-wrapper-44">N400,000</div>
+										</div>
+									</div>
+									<div className="element-rd-position">
+										<div className="overlap-11">
+											<div className="rectangle-5" />
+											<img
+												className="bronze-medal"
+												alt="Bronze medal"
+												src="https://c.animaapp.com/zMz5XxGb/img/bronze-medal-1@2x.png"
+											/>
+											<div className="text-wrapper-39">3rd</div>
+											<div className="text-wrapper-40">Runner</div>
+											<div className="text-wrapper-41">N150,000</div>
 										</div>
 									</div>
 								</div>

@@ -9,23 +9,82 @@ import registerFormIcon from "../../../../assets/register-form-icon.png";
 import Modal from "../../../Modal/Modal";
 import SuccessModal from "../../../Modal/Success/Success.modal";
 import { useWindowSize } from "react-hooks-window-size";
+import { registerModel } from "../../../../models/register.model";
+import axios from "axios";
+import config from "../../../../config.json";
+
+const backupCategories = [
+	{
+		id: 1,
+		name: "MOBILE",
+	},
+	{
+		id: 2,
+		name: "WEB",
+	},
+	{
+		id: 3,
+		name: "BACKEND",
+	},
+];
 
 function RegistrationContent() {
 	const [showModal, setShowModal] = useState(false);
 	const [modalContent, setModalContent] = useState(null);
 	const size = useWindowSize();
 	const desktop = size.width > 968;
+	const [data, setData] = useState(registerModel);
+	const [loading, setLoading] = useState(false);
+	const [allCategories, setAllCategories] = useState(backupCategories);
 
 	useEffect(() => {
 		document.title = "GetLinked | Register";
 	});
 
-	const handleSubmitForm = (e) => {
-		e.preventDefault();
-		setShowModal(true);
-		setModalContent(
-			<SuccessModal component="register" onClose={() => setShowModal(false)} />
-		);
+	const categoryList = async () => {
+		try {
+			const response = await axios.get(
+				`${config.baseUrl}/hackathon/categories-list`
+			);
+
+			setAllCategories(response?.data);
+		} catch (error) {
+			console.log(error);
+		}
+	};
+
+	useEffect(() => {
+		categoryList();
+	}, []);
+
+	const handleFormChange = (e) => {
+		setData({ ...data, [e.target.name]: e.target.value });
+	};
+
+	const handleSubmitForm = async (e) => {
+		setLoading(true);
+		try {
+			e.preventDefault();
+
+			// eslint-disable-next-line no-unused-vars
+			const info = await axios.postForm(
+				`${config.baseUrl}/hackathon/registration`,
+				data
+			);
+
+			setLoading(false);
+			setShowModal(true);
+			setModalContent(
+				<SuccessModal
+					component="register"
+					onClose={() => setShowModal(false)}
+				/>
+			);
+			setData(registerModel);
+		} catch (error) {
+			console.log(error?.response?.data?.email);
+			setLoading(false);
+		}
 	};
 
 	useEffect(() => {
@@ -77,7 +136,10 @@ function RegistrationContent() {
 							className="register img_bright_star"
 						/>
 						<div className="gl_register_form_container">
-							<form className="gl_register_form_inner">
+							<form
+								className="gl_register_form_inner"
+								onSubmit={handleSubmitForm}
+							>
 								<h1>Register</h1>
 								<div className="gl_register_form_inner_bottom">
 									<div className="gl_movement_div">
@@ -97,11 +159,14 @@ function RegistrationContent() {
 											{/* Left */}
 											<div className="gl_register_left_form_div">
 												<div className="gl_register_left_form_div_items">
-													<label htmlFor="teamName">Team’s Name</label>
+													<label htmlFor="team_name">Team’s Name</label>
 													<input
 														type="text"
-														name="teamName"
+														name="team_name"
 														placeholder="Enter the name of your group"
+														value={data.team_name}
+														onChange={handleFormChange}
+														required
 													/>
 												</div>
 												<div className="gl_register_left_form_div_items">
@@ -110,6 +175,9 @@ function RegistrationContent() {
 														type="email"
 														name="email"
 														placeholder="Enter your email address"
+														value={data.email}
+														onChange={handleFormChange}
+														required
 													/>
 												</div>
 											</div>
@@ -117,19 +185,25 @@ function RegistrationContent() {
 											{/* Right */}
 											<div className="gl_register_right_form_div">
 												<div className="gl_register_right_form_div_items">
-													<label htmlFor="phone">Phone</label>
+													<label htmlFor="phone_number">Phone</label>
 													<input
 														type="phone"
-														name="phone"
+														name="phone_number"
 														placeholder="Enter your phone number"
+														value={data.phone_number}
+														onChange={handleFormChange}
+														required
 													/>
 												</div>
 												<div className="gl_register_right_form_div_items">
-													<label htmlFor="projectTopic">Project Topic</label>
+													<label htmlFor="project_topic">Project Topic</label>
 													<input
 														type="text"
-														name="projectTopic"
+														name="project_topic"
 														placeholder="What is your group project topic"
+														value={data.project_topic}
+														onChange={handleFormChange}
+														required
 													/>
 												</div>
 											</div>
@@ -140,14 +214,21 @@ function RegistrationContent() {
 											<div className="select gl_register_left_form_div">
 												<div className="gl_register_left_form_div_items">
 													<label htmlFor="category">Category</label>
-													<select name="category" id="category">
+													<select
+														name="category"
+														id="category"
+														onChange={handleFormChange}
+														// value={data.category}
+														required
+													>
 														<option disabled selected hidden>
 															Select your category
 														</option>
-														<option value="design">Design</option>
-														<option value="development">Development</option>
-														<option value="marketing">Marketing</option>
-														<option value="business">Business</option>
+														{allCategories.map((category) => (
+															<option key={category.id} value={category.id}>
+																{category.name}
+															</option>
+														))}
 													</select>
 												</div>
 											</div>
@@ -155,15 +236,21 @@ function RegistrationContent() {
 											{/* Right */}
 											<div className="select gl_register_right_form_div">
 												<div className="gl_register_right_form_div_items">
-													<label htmlFor="groupSize">Group Size</label>
-													<select name="groupSize" id="groupSize">
+													<label htmlFor="group_size">Group Size</label>
+													<select
+														name="group_size"
+														id="group_size"
+														onChange={handleFormChange}
+														// value={data.group_size}
+														required
+													>
 														<option disabled selected hidden>
 															Select
 														</option>
-														<option value="1-5">1-5</option>
-														<option value="6-10">6-10</option>
-														<option value="11-15">11-15</option>
-														<option value="16-20">16-20</option>
+														<option value={1}>1</option>
+														<option value={5}>5</option>
+														<option value={10}>10</option>
+														<option value={20}>20</option>
 													</select>
 												</div>
 											</div>
@@ -175,21 +262,40 @@ function RegistrationContent() {
 									</p>
 
 									<div className="gl_agreement_div">
-										<input type="checkbox" id="agreement" name="agreement" />
-										<label htmlFor="agreement">
+										<input
+											type="checkbox"
+											id="agreement"
+											name="privacy_poclicy_accepted"
+											value={data.privacy_poclicy_accepted}
+											checked={data.privacy_poclicy_accepted}
+											onChange={(e) =>
+												setData({ ...data, [e.target.name]: e.target.checked })
+											}
+										/>
+										<label htmlFor="privacy_poclicy_accepted">
 											I agreed with the event terms and conditions and privacy
 											policy
 										</label>
 									</div>
 
 									<div className="gl_register_form_submit">
-										<button
-											type="submit"
-											className="register_submit_btn"
-											onClick={handleSubmitForm}
-										>
-											{desktop ? "Register Now" : "Submit"}
-										</button>
+										{loading ? (
+											<button type="submit" className="register_submit_btn">
+												<lord-icon
+													src="https://cdn.lordicon.com/pxruxqrv.json"
+													trigger="loop"
+													colors="primary:#fff,secondary:#ff26b9"
+													style={{
+														height: "40px",
+														width: "40px",
+													}}
+												></lord-icon>
+											</button>
+										) : (
+											<button type="submit" className="register_submit_btn">
+												{desktop ? "Register Now" : "Submit"}
+											</button>
+										)}
 									</div>
 								</div>
 							</form>

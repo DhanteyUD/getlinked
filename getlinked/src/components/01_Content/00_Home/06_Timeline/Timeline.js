@@ -1,8 +1,12 @@
 import React from "react";
 import "./timeline.css";
 import { faintStar, brightStar, darkPurpleStar } from "../../../../assets";
+import { useWindowSize } from "react-hooks-window-size";
 
 function TimelineContent() {
+	const size = useWindowSize();
+	const desktop = size.width > 968;
+
 	return (
 		<>
 			<div className="gl_timeline">
@@ -60,22 +64,22 @@ function TimelineContent() {
 							</div>
 							<p className="timeline_text_content the-getlinked-tech">
 								The getlinked tech hackathon 1.0 is formally announced
-								<br />
+								{desktop ? <br /> : ""}
 								to the general public and teams begin to get ready to register
 							</p>
 							<p className="timeline_text_content interested-teams-can">
 								Interested teams can now show their interest in the
-								<br />
+								{desktop ? <br /> : ""}
 								getlinked tech hackathon 1.0 2023 by proceeding to register
 							</p>
 							<p className="timeline_text_content interested">
 								Interested Participants are no longer Allowed to
-								<br />
+								{desktop ? <br /> : ""}
 								register
 							</p>
 							<p className="timeline_text_content accepted-teams-can">
 								Accepted teams can now proceed to build their
-								<br />
+								{desktop ? <br /> : ""}
 								ground breaking skill driven solutions
 							</p>
 							<p className="timeline_text_content all-teams-whom-idea">
@@ -151,8 +155,8 @@ function TimelineContent() {
 							/>
 						</div>
 						<p className="here-is-the">
-							Here is the breakdown of the time we anticipate <br />
-							using for the upcoming event.
+							Here is the breakdown of the time we anticipate using for the
+							upcoming event.
 						</p>
 					</div>
 				</div>

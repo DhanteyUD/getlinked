@@ -54,6 +54,7 @@
   font-size: 14px;
   font-weight: 400;
   line-height: 172.4%;
+  width: 30%;
 }
 
 .timeline_lines {
@@ -154,13 +155,13 @@
 }
 
 .interested {
-  left: 122px;
+  left: 173px;
   text-align: right;
   top: 686px;
 }
 
 .accepted-teams-can {
-  left: 124px;
+  left: 183px;
   text-align: right;
   top: 1020px;
 }
@@ -284,4 +285,297 @@
   left: 199px;
   top: 194px;
   width: 30px;
+}
+
+@media screen and (max-width: 968px) {
+  .gl_timeline {
+    height: 1100px;
+    flex-shrink: 0;
+  }
+
+  .gl_timeline_container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    padding: 50px 40px;
+  }
+
+  .overlap-13 {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+  }
+
+  .timeline {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .text-wrapper-46 {
+    color: #ffffff;
+    font-family: "Clash Display", sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    left: 0;
+    letter-spacing: 0;
+    line-height: 32px;
+    position: relative;
+    top: 0;
+  }
+
+  .here-is-the {
+    color: #ffffff;
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    left: 0;
+    letter-spacing: 0;
+    line-height: 24.1px;
+    position: absolute;
+    text-align: center;
+    top: 40px;
+    font-style: normal;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 172.4%;
+    width: 100%;
+  }
+
+  .timeline_lines {
+    left: 0;
+    position: absolute;
+    width: 4px;
+  }
+
+  .line-15 {
+    height: 95px;
+    top: 154px;
+  }
+
+  .line-16 {
+    height: 86px;
+    top: 300px;
+  }
+
+  .line-17 {
+    height: 86px;
+    top: 438px;
+  }
+
+  .line-18 {
+    height: 195px;
+    top: 530px;
+  }
+
+  .line-19 {
+    height: 86px;
+    top: 725px;
+  }
+
+  .line-20 {
+    height: 90px;
+    top: 860px;
+  }
+
+  .timeline_text_wrapper {
+    color: #d434fe;
+    font-family: "Montserrat", sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    width: auto;
+    left: 0;
+  }
+
+  .text-wrapper-47 {
+    left: 20px;
+    top: 154px;
+  }
+
+  .text-wrapper-48 {
+    left: 20px;
+    top: 439px;
+  }
+
+  .text-wrapper-49 {
+    left: 20px;
+    top: 725px;
+  }
+
+  .text-wrapper-50 {
+    left: 20px;
+    top: 300px;
+  }
+
+  .announcement-of-the {
+    left: 20px;
+    top: 580px;
+  }
+
+  .text-wrapper-51 {
+    left: 20px;
+    top: 860px;
+  }
+
+  .timeline_text_content {
+    color: #ffffff;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    letter-spacing: 0;
+    font-size: 11px;
+    position: absolute;
+    line-height: 20px;
+  }
+
+  .the-getlinked-tech {
+    left: 20px;
+    text-align: left;
+    top: 175px;
+  }
+
+  .interested-teams-can {
+    left: 20px;
+    top: 320px;
+  }
+
+  .interested {
+    left: 20px;
+    text-align: left;
+    top: 460px;
+  }
+
+  .all-teams-whom-idea {
+    left: 20px;
+    top: 615px;
+  }
+
+  .accepted-teams-can {
+    left: 20px;
+    text-align: left;
+    top: 747px;
+  }
+
+  .teams-get-the {
+    left: 20px;
+    top: 880px;
+  }
+
+  .text-wrapper-52 {
+    left: 20px;
+    top: 255px;
+  }
+
+  .text-wrapper-53 {
+    left: 20px;
+    top: 390px;
+  }
+
+  .text-wrapper-54 {
+    left: 20px;
+    top: 529px;
+  }
+
+  .text-wrapper-55 {
+    left: 20px;
+    top: 682px;
+  }
+
+  .text-wrapper-56 {
+    left: 20px;
+    top: 817px;
+  }
+
+  .text-wrapper-57 {
+    left: 20px;
+    top: 960px;
+  }
+
+  .overlap-group-3 {
+    background: linear-gradient(
+      180deg,
+      rgb(144, 58, 255) 0%,
+      rgb(212, 52, 254) 100%
+    );
+    border-radius: 26.5px;
+    height: 19px;
+    width: 19px;
+    position: relative;
+  }
+
+  .text-wrapper-58 {
+    color: #ffffff;
+    font-family: "Montserrat", Helvetica;
+    font-size: 11px;
+    font-weight: 700;
+    left: 7px;
+    top: 3px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+  }
+
+  .no {
+    height: 19px;
+    width: 19px;
+    left: -8px;
+    position: absolute;
+  }
+
+  .no-1 {
+    top: 254px;
+  }
+
+  .no-2 {
+    top: 388px;
+  }
+
+  .no-3 {
+    top: 527px;
+  }
+
+  .no-4 {
+    top: 680px;
+  }
+
+  .no-5 {
+    top: 815px;
+  }
+
+  .no-6 {
+    top: 955px;
+  }
+
+  .timeline_stars {
+    object-fit: cover;
+    position: absolute;
+  }
+
+  .star-24 {
+    height: 15px;
+    left: -10px;
+    top: 1015px;
+    width: 15px;
+  }
+
+  .star-25 {
+    height: 15px;
+    left: 250px;
+    top: 540px;
+    width: 15px;
+  }
+
+  .star-pu-7 {
+    height: 15px;
+    left: 50px;
+    top: 115px;
+    width: 15px;
+  }
 }

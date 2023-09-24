@@ -46,6 +46,7 @@ function Home() {
 					<RuleContent />
 					<AttributeContent />
 					<FAQsContent />
+					<TimelineContent />
 				</div>
 			)}
 		</>

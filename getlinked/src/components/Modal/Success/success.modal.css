@@ -128,3 +128,140 @@
   background: transparent;
   border: 2px solid #ff26b9;
 }
+
+@media screen and (max-width: 968px) {
+  .success_modal_container {
+    height: 467px;
+    width: 100%;
+    flex-shrink: 0;
+    border-radius: 10px;
+    padding: 20px;
+    border-radius: 5px;
+    border: 1px solid #d434fe;
+    background: rgba(255, 255, 255, 0.01);
+    position: relative;
+  }
+
+  .success.img_dark_purple_star {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    top: -20px;
+    left: 96%;
+  }
+
+  .success.img_purple_star {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    bottom: -45px;
+    right: 30px;
+  }
+
+  .success_modal_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    width: 100%;
+  }
+
+  .success_modal_image {
+    height: 50%;
+    width: 100%;
+    display: flex;
+  }
+
+  .success_modal_image img {
+    position: absolute;
+  }
+
+  .success.img_faint_star {
+    left: 10%;
+    top: 40%;
+    width: 15px;
+    height: 15px;
+  }
+
+  .success.img_successful_man {
+    width: 65%;
+    right: 8%;
+    top: 25px;
+    z-index: 2;
+  }
+
+  .success.img_successful_done {
+    width: 62%;
+    left: 0;
+    top: 10px;
+    z-index: 1;
+  }
+  .success.img_successful {
+    width: 72%;
+    left: 15%;
+    top: 10px;
+    z-index: 1;
+  }
+
+  .success_modal_info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 26%;
+    width: 100%;
+  }
+
+  .success_modal_info > h1 {
+    color: #fff;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .success_modal_subInfo {
+    display: flex;
+    justify-content: center;
+    height: auto;
+    margin-bottom: 20px;
+  }
+
+  .success_modal_subInfo > p {
+    color: #fff;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
+
+  .success.img_emoji_wink {
+    margin: 0 0 -18px 5px;
+  }
+
+  .success_back_btn {
+    width: 100%;
+    height: 53px;
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    cursor: pointer;
+    transition: 0.5;
+  }
+
+  .success_back_btn:hover {
+    transition: 0.5s;
+    background: transparent;
+    border: 2px solid #ff26b9;
+  }
+}

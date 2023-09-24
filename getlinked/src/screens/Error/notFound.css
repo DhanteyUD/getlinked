@@ -46,10 +46,35 @@
   width: 220px;
 }
 
-
 @media screen and (max-width: 968px) {
   .error-page > h1 {
-    font-size: 120px;
+    font-size: 105px;
     padding: 80px 20px;
+    display: flex;
+  }
+
+  .error-page-text {
+    color: #fff;
+    margin-bottom: 30px;
+    font-size: 12px;
+  }
+
+  .go-back-home-btn {
+    border: none;
+    color: #fff;
+    padding: 7px 25px;
+    transition: 0.2s;
+    border: 1px solid #fff;
+    width: 174px;
+    height: 53px;
+    flex-shrink: 0;
+    color: #fff;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    transition: all 0.5s;
+    cursor: pointer;
+    border-radius: 5px;
   }
 }

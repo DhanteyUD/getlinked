@@ -1,2 +1,2 @@
 # Getlinked
-getlinked Tech Hackathon 1.0
+getlinked Tech Hackathon
